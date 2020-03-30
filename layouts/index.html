@@ -1,0 +1,17 @@
+{{ define "meta" }}
+<meta name="hello">
+{{ end }}
+
+{{ define "main" }}
+<main>
+    <section class="jumbotron">
+        <div class="jumbotron__content">
+            <h1>{{.Params.Headline | safeHTML}}</h1>
+            <p>{{.Params.Tagline}}</p>
+            <a class="btn btn--primary">Watch Live</a>
+        </div>
+        <video src="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Flatland%20Web%20Video.mp4?alt=media&token=27c1cb44-db1c-4150-8cd7-be5ea4da2d75" autoplay loop muted></video>
+        <div class="jumbotron__overlay"></div>
+    </section>
+</main>
+{{ end }}

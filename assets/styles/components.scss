@@ -1,0 +1,62 @@
+.btn {
+  padding: 12px 24px;
+  box-sizing: border-box;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 8px;
+  background: var(--white);
+  font-weight: 600;
+  display: block;
+  max-width: max-content;
+}
+
+.btn.btn--primary {
+  background: var(--blue);
+  color: #fff;
+}
+
+.btn__icon {
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 12px;
+  background: transparent;
+  color: var(--black);
+}
+
+.btn__icon.btn__icon--hamburger div {
+  position: relative;
+  height: 18px;
+  width: 16px;
+}
+
+.btn__icon.btn__icon--hamburger span,
+.btn__icon.btn__icon--hamburger span::before,
+.btn__icon.btn__icon--hamburger span::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--white);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 6.5px;
+}
+
+.btn__icon.btn__icon--hamburger.btn__icon--hamburger--white span,
+.btn__icon.btn__icon--hamburger.btn__icon--hamburger--white span::before,
+.btn__icon.btn__icon--hamburger.btn__icon--hamburger--white span::after {
+  background: var(--black);
+}
+
+.btn__icon.btn__icon--hamburger span::before {
+  top: -6px;
+}
+
+.btn__icon.btn__icon--hamburger span::after {
+  width: 10px;
+}
