@@ -8,10 +8,45 @@
         <div class="jumbotron__content">
             <h1>{{.Params.Headline | safeHTML}}</h1>
             <p>{{.Params.Tagline}}</p>
-            <a class="btn btn--primary">Watch Live</a>
+            <a class="btn btn--primary" href="{{ .Params.Action.Url }}">{{ .Params.Action.Label }}</a>
         </div>
         <video src="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Flatland%20Web%20Video.mp4?alt=media&token=27c1cb44-db1c-4150-8cd7-be5ea4da2d75" autoplay loop muted></video>
         <div class="jumbotron__overlay"></div>
+    </section>
+    <!-- TODO: add alert check -->
+    <section class="block">
+        <div class="section-title">
+            <h2>{{ .Params.Connect.Title }}</h2>
+            <p>{{ .Params.Connect.Subtitle }}</p>
+        </div>
+        <div class="container container__cards--full-width">
+            {{ range $card := .Params.Connect.Cards  }}
+            <a class="card-link" href="{{ $card.url }}">
+                <div class="card card__img">
+                    <div></div>
+                    <i class="{{ $card.icon }}"></i>
+                    <h3>{{ $card.title }}</h3>
+                    <img src="{{ $card.img }}" alt="{{ $card.imgAlt }}" />
+                    <div class="overlay"></div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+    <section class="block block--alt">
+        <div class="container">
+            <div class="section-title section-title--left">
+                <h2>Weekly Sermon</h2>
+                <p><strong>Subscribe</strong></p>
+                <a href="/sermons" class="btn btn--primary">Watch More Sermons</a>
+            </div>
+            <div class="card card__sermon">
+                <h2>Title</h2>
+                <p>Series Title</p>
+                <i class="fas fa-play"></i>
+                <img src="" alt="" />
+            </div>
+        </div>
     </section>
 </main>
 {{ end }}

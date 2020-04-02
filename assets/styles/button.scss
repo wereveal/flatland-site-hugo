@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 .btn {
   padding: 12px 24px;
   box-sizing: border-box;
@@ -10,11 +14,12 @@
   font-weight: 600;
   display: block;
   max-width: max-content;
+  text-decoration: none;
 }
 
 .btn.btn--primary {
   background: var(--blue);
-  color: #fff;
+  color: var(--white);
 }
 
 .btn__icon {

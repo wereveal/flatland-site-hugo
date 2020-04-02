@@ -27,7 +27,7 @@
 
 .jumbotron .jumbotron__overlay {
   position: absolute;
-  width: 100%;
+  width: 105%;
   height: 100%;
   background: var(--black);
   opacity: 0.7;
@@ -44,6 +44,7 @@
     font-size: 65px;
     font-weight: 900;
     max-width: 550px;
+    color: var(--white);
 
     @media screen and (max-width: 1110px) {
       font-size: 50px;

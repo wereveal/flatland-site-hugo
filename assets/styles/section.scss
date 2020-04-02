@@ -1,0 +1,23 @@
+section.block {
+  padding: 56px 0;
+  box-sizing: border-box;
+  background: var(--white);
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--black);
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+section.block--alt {
+  background: var(--gray);
+}
+
+.section-title h2 {
+  margin-bottom: 24px;
+}
