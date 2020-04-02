@@ -1,10 +1,17 @@
 footer {
-  width: 100%;
-  background: var(--jet);
+  width: 90%;
+  background: #140F2D;
   color: var(--white);
   box-sizing: border-box;
   position: relative;
-  padding: 48px 10%;
+  padding: 48px 5%;
+  top: -50px;
+  margin: 0 auto;
+  border-radius: 8px;
+
+  a {
+    color: #82B9EF !important;
+  }
 }
 
 footer .info {
@@ -60,7 +67,7 @@ footer .social {
   grid-gap: 8px;
 
   a i {
-    color: var(--blue);
+    color: #82B9EF;
   }
 }
 

@@ -83,20 +83,22 @@ Flatland Church | Helping people move to the center of God's Kingdom
             <h2>{{ .Params.Prayer.Title }}</h2>
             <p>{{ .Params.Prayer.Subtitle }}</p>
             <div class="spacer" style="--top: 4"></div>
-            <a href="{{ .Params.Prayer.Action.Url }}" class="btn btn--primary btn--center">{{ .Params.Prayer.Action.Label }}</a>
+            <a href="{{ .Params.Prayer.Action.Url }}" class="btn btn--secondary btn--center">{{ .Params.Prayer.Action.Label }}</a>
         </div>
     </section>
-    <section class="block block__img">
-        <div class="container">
-            <div class="section-title section-title--left">
-                <h2>{{ .Params.FooterAd.Title }}</h2>
-                <p>{{ .Params.FooterAd.Subtitle }}</p>
-                <div class="spacer" style="--top: 2"></div>
-                <a href="{{ .Params.FooterAd.Action.Url }}" class="btn">{{ .Params.FooterAd.Action.Label }}</a>
+    {{ with .Params.FooterAd }}
+        <section class="block block__img">
+            <div class="container">
+                <div class="section-title section-title--left">
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ .Subtitle }}</p>
+                    <div class="spacer" style="--top: 2"></div>
+                    <a href="{{ .Action.Url }}" class="btn">{{ .Action.Label }}</a>
+                </div>
+                <img src="{{ .Img }}" alt="{{ .ImgAlt }}"/>
+                <div class="overlay"></div>
             </div>
-            <img src="{{ .Params.FooterAd.Img }}" alt="{{ .Params.FooterAd.ImgAlt }}"/>
-            <div class="overlay"></div>
-        </div>
-    </section>
+        </section>
+    {{ end }}
 </main>
 {{ end }}
