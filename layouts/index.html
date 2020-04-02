@@ -2,17 +2,28 @@
 <meta name="hello">
 {{ end }}
 
+{{ define "title" }}
+Flatland Church | Helping people move to the center of God's Kingdom
+{{ end }}
+
 {{ define "main" }}
 <main>
     <section class="jumbotron">
         <div class="jumbotron__content">
-            <h1>{{.Params.Headline | safeHTML}}</h1>
-            <p>{{.Params.Tagline}}</p>
+            <h1>{{.Params.Title | safeHTML}}</h1>
+            <p>{{.Params.Subtitle}}</p>
             <a class="btn btn--primary" href="{{ .Params.Action.Url }}">{{ .Params.Action.Label }}</a>
         </div>
         <video src="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Flatland%20Web%20Video.mp4?alt=media&token=27c1cb44-db1c-4150-8cd7-be5ea4da2d75" autoplay loop muted></video>
         <div class="jumbotron__overlay"></div>
     </section>
+    {{ with .Content }}
+        <section class="block block--alt">
+            <div class="container container__stack">
+                {{ . }}
+            </div>
+        </section>
+    {{ end }}
     <!-- TODO: add alert check -->
     <section class="block">
         <div class="section-title">
@@ -46,6 +57,45 @@
                 <i class="fas fa-play"></i>
                 <img src="" alt="" />
             </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="section-title">
+            <h2>{{ .Params.Transform.Title }}</h2>
+            <p>{{ .Params.Transform.Subtitle }}</p>
+        </div>
+        <div class="container container__cards--full-width">
+            {{ range $card := .Params.Transform.Cards  }}
+            <a class="card-link" href="{{ $card.url }}">
+                <div class="card card__img">
+                    <div></div>
+                    <i class="{{ $card.icon }}"></i>
+                    <h3>{{ $card.title }}</h3>
+                    <img src="{{ $card.img }}" alt="{{ $card.imgAlt }}" />
+                    <div class="overlay"></div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+    <section class="block block--alt">
+        <div class="section-title">
+            <h2>{{ .Params.Prayer.Title }}</h2>
+            <p>{{ .Params.Prayer.Subtitle }}</p>
+            <div class="spacer" style="--top: 4"></div>
+            <a href="{{ .Params.Prayer.Action.Url }}" class="btn btn--primary btn--center">{{ .Params.Prayer.Action.Label }}</a>
+        </div>
+    </section>
+    <section class="block block__img">
+        <div class="container">
+            <div class="section-title section-title--left">
+                <h2>{{ .Params.FooterAd.Title }}</h2>
+                <p>{{ .Params.FooterAd.Subtitle }}</p>
+                <div class="spacer" style="--top: 2"></div>
+                <a href="{{ .Params.FooterAd.Action.Url }}" class="btn">{{ .Params.FooterAd.Action.Label }}</a>
+            </div>
+            <img src="{{ .Params.FooterAd.Img }}" alt="{{ .Params.FooterAd.ImgAlt }}"/>
+            <div class="overlay"></div>
         </div>
     </section>
 </main>

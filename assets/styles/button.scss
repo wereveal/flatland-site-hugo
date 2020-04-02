@@ -15,6 +15,7 @@ button {
   display: block;
   max-width: max-content;
   text-decoration: none;
+  color: var(--black);
 }
 
 .btn.btn--primary {
@@ -64,4 +65,8 @@ button {
 
 .btn__icon.btn__icon--hamburger span::after {
   width: 10px;
+}
+
+.btn--center {
+  margin: 0 auto;
 }

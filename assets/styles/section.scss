@@ -1,17 +1,28 @@
 section.block {
-  padding: 56px 0;
+  padding: 128px 0;
   box-sizing: border-box;
   background: var(--white);
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 .section-title {
   text-align: center;
   color: var(--black);
+
+  p {
+    margin: 0 auto;
+    width: 50%;
+  }
 }
 
 .section-title--left {
   text-align: left;
+
+  p {
+    margin: 0;
+  }
 }
 
 section.block--alt {
@@ -20,4 +31,38 @@ section.block--alt {
 
 .section-title h2 {
   margin-bottom: 24px;
+}
+
+.block__img {
+  min-height: 400px;
+
+  h2, p {
+    color: var(--white);
+  }
+}
+
+.block__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  z-index: -2;
+}
+
+.block__img .overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background 0.2s ease-out;
 }

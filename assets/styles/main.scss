@@ -5,6 +5,7 @@
   --coral: #FA824C;
   --black: #342E37;
   --gray: #f1f3f6;
+  --jet: #010400;
 }
 
 * {
@@ -18,9 +19,16 @@ body {
   overflow-x: hidden;
 }
 
+.spacer {
+  margin-top: calc(var(--top) * 8px);
+  margin-bottom: calc(var(--bottom) * 8px);
+}
+
+@import 'link';
 @import 'titles';
 @import 'button';
 @import 'header';
 @import 'jumbotron';
 @import 'card';
 @import 'section';
+@import 'footer';
