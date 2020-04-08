@@ -50,7 +50,7 @@ transform:
       img: https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
 prayer:
     title: Need Prayer?
-    subtitle: Prayer Blurb
+    subtitle: Prayer is at the core of everything we are at Flatland. The Apostle Paul encouraged his friends to never stop praying. We want to prayer for you in your time of need.
     action:
       url: /prayer
       label: Request Prayer
@@ -58,7 +58,7 @@ footerAd:
     title: Receive training, fulfill your calling
     subtitle: Omaha School of Ministry is a ministry training program from Flatland Church.  
     action:
-      url: https://omahaministry.org
+      url: /osm
       label: Find Out More
     img: https://i.imgur.com/STjqK5j.jpg
 ---

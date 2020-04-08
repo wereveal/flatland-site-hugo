@@ -30,8 +30,21 @@
         </div>
     </nav>
     <script>
-      if (window.location.pathname === '/') {
-        document.querySelector('header').className = "";
-      }
+      (({ height }) => {
+        if (window.location.pathname === '/') {
+          document.querySelector('header').className = "";
+
+          const scrollListener = () => {
+            const { y } = document.querySelector('h1').getBoundingClientRect();
+            if (y - height <= 0) {
+              document.querySelector('header').className = "header--white";
+            } else if (y - height > 0) {
+              document.querySelector('header').className = "";
+            }
+          };
+
+          window.addEventListener('scroll', scrollListener);
+        }
+      })(document.querySelector('header').getBoundingClientRect());
     </script>
 </header>

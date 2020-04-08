@@ -25,6 +25,13 @@ body {
   margin-bottom: calc(var(--bottom) * 8px);
 }
 
+.row {
+  display: grid;
+  grid-template-columns: repeat(var(--rep), minmax(0, max-content));
+  grid-gap: 20px;
+  align-items: center;
+}
+
 @import 'link';
 @import 'titles';
 @import 'button';
@@ -33,7 +40,9 @@ body {
 @import 'container';
 @import 'card';
 @import 'section';
-@import 'footer';
+@import 'pagination';
+@import 'tag';
 
 // Sections
 @import 'sermon-list';
+@import 'footer';

@@ -28,6 +28,11 @@ button {
   color: var(--black);
 }
 
+.btn.btn--gray {
+  background: var(--gray);
+  color: var(--black);
+}
+
 .btn__icon {
   font-size: 16px;
   appearance: none;

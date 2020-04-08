@@ -17,6 +17,10 @@ Flatland Church | Helping people move to the center of God's Kingdom
         <video src="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Flatland%20Web%20Video.mp4?alt=media&token=27c1cb44-db1c-4150-8cd7-be5ea4da2d75" autoplay loop muted></video>
         <div class="jumbotron__overlay"></div>
     </section>
+
+    <!-- TODO: add alert check -->
+
+    {{/* Content Blurb */}}
     {{ with .Content }}
         <section class="block block--alt">
             <div class="container container__stack">
@@ -24,7 +28,8 @@ Flatland Church | Helping people move to the center of God's Kingdom
             </div>
         </section>
     {{ end }}
-    <!-- TODO: add alert check -->
+
+    {{/* Connect Section */}}
     <section class="block">
         <div class="section-title">
             <h2>{{ .Params.Connect.Title }}</h2>
@@ -44,21 +49,31 @@ Flatland Church | Helping people move to the center of God's Kingdom
             {{ end }}
         </div>
     </section>
+
+    {{/* Weekly Sermon Section */}}
     <section class="block block--alt">
-        <div class="container">
+        <div class="container container--two-col">
             <div class="section-title section-title--left">
                 <h2>Weekly Sermon</h2>
-                <p><strong>Subscribe</strong></p>
                 <a href="/sermons" class="btn btn--primary">Watch More Sermons</a>
             </div>
-            <div class="card card__sermon">
-                <h2>Title</h2>
-                <p>Series Title</p>
-                <i class="fas fa-play"></i>
-                <img src="" alt="" />
-            </div>
+            {{ $latestSermon := where .Site.Pages "Section" "sermons" }}
+            {{ with index $latestSermon.ByDate.Reverse 0 }}
+                <a href="{{ .Permalink }}" class="sermon-link">
+                    <div class="sermon-card sermon-card__home--featured">
+                        <img src="{{ .Params.Image }}" alt="sermon video thumbnail" />
+                        <div class="sermon-card__meta">
+                            <span class="tag">Latest Sermon</span>
+                            <p>{{ .Title }}</p>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </a>
+            {{ end }}
         </div>
     </section>
+
+    {{/* Transformation section */}}
     <section class="block">
         <div class="section-title">
             <h2>{{ .Params.Transform.Title }}</h2>
@@ -78,6 +93,8 @@ Flatland Church | Helping people move to the center of God's Kingdom
             {{ end }}
         </div>
     </section>
+
+    {{/* Request Prayer Section */}}
     <section class="block block--alt">
         <div class="section-title">
             <h2>{{ .Params.Prayer.Title }}</h2>
@@ -86,6 +103,8 @@ Flatland Church | Helping people move to the center of God's Kingdom
             <a href="{{ .Params.Prayer.Action.Url }}" class="btn btn--secondary btn--center">{{ .Params.Prayer.Action.Label }}</a>
         </div>
     </section>
+
+    {{/* Ad Section */}}
     {{ with .Params.FooterAd }}
         <section class="block block__img">
             <div class="container">

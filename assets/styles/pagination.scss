@@ -1,0 +1,13 @@
+.pagination {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, max-content));
+  width: max-content;
+  grid-gap: 16px;
+  margin: 24px auto 48px;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

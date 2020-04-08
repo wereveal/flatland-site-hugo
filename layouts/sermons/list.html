@@ -1,59 +1,75 @@
 {{ define "main" }}
+{{ $paginator := (.Paginator 13).Pages }}
+{{ if not .Paginator.HasPrev }}
+    {{ $paginator = (.Paginator 13).Pages }}
+{{ end }}
+
 <section>
     <div class="container container__content">
         <h1>Sermons</h1>
-        {{ $latest := index .Paginator.Pages.ByDate.Reverse 0 }}
+        {{ $latest := index $paginator.ByDate.Reverse 0 }}
         {{ if not .Paginator.HasPrev }}
-        <div class="sermon-card sermon-card--featured">
-            {{ with $latest }}
-                <img src="{{ .Params.Image }}" />
+        <a href="{{ $latest.Permalink }}" class="sermon-link">
+            <div class="sermon-card sermon-card--featured">
+                {{ with $latest }}
+                    <img src="{{ .Params.Image }}" />
+                    <div class="sermon-card__meta">
+                        <span class="tag">Latest Sermon</span>
+                        <p>{{ .Title }}</p>
+                    </div>
+                    <div class="overlay"></div>
+                {{ end }}
+            </div>
+        </a>
+        {{ $pages := .Pages }}
+        {{ with $latest.Params.Series }}
+        <div class="sermon-list__section">
+            <div class="row" style="--rep: 2">
+                <h2 class="sermon-section-title">
+                    Current Series
+                </h2>
+                <a href="/series/{{ . }}" class="btn btn--gray">
+                    View Series
+                </a>
+            </div>
+
+            <div class="sermon-grid--current-series">
+                {{ range where $pages "Params.series" . }}
                 <p>{{ .Title }}</p>
-                <p>{{ .Permalink }}</p>
-            {{ end }}
+                <p>🤬</p>
+                {{ end }}
+            </div>
         </div>
+        {{ end }}
         {{ end }}
         <!-- TODO: add current series -->
-        {{ if $latest.Params.Series }}
-        <div class="sermon-grid--current-series">
-            {{ range where .Pages "Sermons" "Params.series" $latest.Params.Series }}
-            <p>{{ .Title }}</p>
+
+        <div class="sermon-list__section">
+            <h2 class="sermon-section-title">
+                All Sermons
+            </h2>
+
+            <div class="sermon-grid">
+            {{ range after 1 $paginator.ByDate.Reverse }}
+                <a href="{{ .Permalink }}" class="sermon-link">
+                    <div class="sermon-card">
+                        <img src="{{ .Params.Image }}" alt="Sermon thumbnail" />
+                    </div>
+                    {{ .Title }}
+                </a>
             {{ end }}
-        </div>
-        {{ end }}
-
-        <h2 class="sermon-section-title">
-            All Sermons
-        </h2>
-
-        <div class="sermon-grid">
-        {{ range after 1 .Paginator.Pages.ByDate.Reverse }}
-            <div>
-                <div class="sermon-card">
-                    <img src="{{ .Params.Image }}" alt="Sermon thumbnail" />
-                </div>
-                {{ .Title }}
             </div>
-        {{ end }}
         </div>
     </div>
+
+    <div class="pagination">
+        {{ if .Paginator.HasPrev }}
+            <a class="btn btn--gray" href="{{ .Paginator.Prev.URL }}">Newer Sermons</a>
+        {{ end }}
+        <p>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</p>
+        {{ if .Paginator.HasNext }}
+            <a class="btn btn--gray" href="{{ .Paginator.Next.URL }}">Older Sermons</a>
+        {{ end }}
+    </div>
 </section>
-<script>
-  (() => {
-    const PAGE_DATA_KEY = 'fc:pageData:sermons:lastVisit';
-    const lastVisit = window.localStorage.getItem(PAGE_DATA_KEY) || '';
-    {{ with index .Paginator.Pages.ByDate.Reverse 0 }}
-    const latestDate = "{{ .Date.Format "2006-01-02" }}";
-    {{ end }}
-
-    if (latestDate > lastVisit) {
-      const el = document.querySelector('.sermon-card--featured');
-      el.className += ` sermon-card--new`;
-    }
-
-    const now = new Date();
-    const pad = (num) => num.toString().padStart(2, '0');
-    const saveDate = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
-    localStorage.setItem(PAGE_DATA_KEY, saveDate);
-  })();
-</script>
 {{ end }}
