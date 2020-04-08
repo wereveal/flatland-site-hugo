@@ -35,12 +35,15 @@ transform:
     - url: /next-step
       title: Find your next step through our Next Step class.
       icon: 
-      img:
-      imgAlt:
+      img: https://i.imgur.com/vLzs1f7.jpg
+      imgAlt: Bart Wilkins teaching at the 174 Next Step class.
     - url: /classes
       title: Take one of our classes.
+      img: https://i.imgur.com/HUyJAeO.jpg
+      imgAlt: Women sitting in a teaching session.
     - url: /coaching
       title: Receive life coaching.
+      img: https://i.imgur.com/vuen9vd.jpg
     - url: /resources
       title: Discover resources to move to the center.
       icon: fas fa-book

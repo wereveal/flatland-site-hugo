@@ -1,4 +1,4 @@
-<header>
+<header class="header--white">
     <nav class="desktop-nav">
         <ul>
             <li><a href="/about">I'm New</a></li>
@@ -29,4 +29,9 @@
             </button>
         </div>
     </nav>
+    <script>
+      if (window.location.pathname === '/') {
+        document.querySelector('header').className = "";
+      }
+    </script>
 </header>

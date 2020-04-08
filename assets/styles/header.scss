@@ -10,6 +10,9 @@ header {
   box-sizing: border-box;
   overflow: hidden;
   padding: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 3000;
 
   button {
     color: var(--white) !important;
@@ -18,7 +21,17 @@ header {
 
 header.header--white {
   background: #fff;
-  color: var(--black) !important;
+  box-shadow: 0 0 12px -1px rgba(0,0,0,0.1);
+
+  * {
+    color: var(--black) !important;
+  }
+
+  .btn__icon--hamburger span,
+  .btn__icon--hamburger span::before,
+  .btn__icon--hamburger span::after {
+    background: var(--black);
+  }
 }
 
 .mobile-nav {
