@@ -5,6 +5,9 @@ date: '2016-01-10T09:30:00.000Z'
 video:
   type: vimeo
   id: 151312337
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: all-aboard
 ---
 

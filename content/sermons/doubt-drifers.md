@@ -6,6 +6,9 @@ date: '2018-08-26T14:30:00.000Z'
 video:
   type: vimeo
   id: 286874436
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: drifters
 ---
 

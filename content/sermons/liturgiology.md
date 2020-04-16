@@ -5,6 +5,9 @@ date: '2014-12-21T09:30:00.000Z'
 video:
   type: vimeo
   id: 115167919
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: ecclesia
 ---
 

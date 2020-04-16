@@ -5,6 +5,9 @@ date: '2015-10-11T09:30:00.000Z'
 video:
   type: vimeo
   id: 142060718
+speaker:
+  name: Adam Julch
+  permalink: adam-julch
 series: prospectors
 ---
 

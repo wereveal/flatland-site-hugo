@@ -5,6 +5,9 @@ date: '2017-06-25T09:30:00.000Z'
 video:
   type: vimeo
   id: 223035675
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: insiders
 ---
 

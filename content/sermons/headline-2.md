@@ -5,6 +5,9 @@ date: '2015-04-19T09:30:00.000Z'
 video:
   type: vimeo
   id: 125390453
+speaker:
+  name: Jeff Hartensveld
+  permalink: jeff-hartensveld
 series: headlines
 ---
 

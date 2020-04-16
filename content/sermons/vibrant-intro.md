@@ -6,6 +6,9 @@ date: '2019-01-03T15:30:00.000Z'
 video:
   type: vimeo
   id: 309648005
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: vibrant
 ---
 

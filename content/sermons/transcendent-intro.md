@@ -6,6 +6,9 @@ date: '2018-11-11T15:00:00.000Z'
 video:
   type: vimeo
   id: 300155956
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: transcendent
 ---
 

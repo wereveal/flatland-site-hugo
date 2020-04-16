@@ -5,6 +5,9 @@ date: '2015-03-15T09:30:00.000Z'
 video:
   type: vimeo
   id: 122246939
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: flight-school
 ---
 

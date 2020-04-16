@@ -5,6 +5,9 @@ date: '2019-11-24T15:30:00.000Z'
 video:
   type: vimeo
   id: 376672391
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: here-below
 ---
 

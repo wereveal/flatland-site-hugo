@@ -5,6 +5,9 @@ date: '2017-04-16T09:30:00.000Z'
 video:
   type: vimeo
   id: 213429456
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: love-can
 ---
 

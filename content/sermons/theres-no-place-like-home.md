@@ -5,6 +5,9 @@ date: '2016-06-26T11:00:00.000Z'
 video:
   type: vimeo
   id: 172301481
+speaker:
+  name: Adam Julch
+  permalink: adam-julch
 series: no-place-like-home
 ---
 

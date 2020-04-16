@@ -6,6 +6,9 @@ date: '2018-10-14T14:30:00.000Z'
 video:
   type: vimeo
   id: 295170277
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: joshua
 ---
 

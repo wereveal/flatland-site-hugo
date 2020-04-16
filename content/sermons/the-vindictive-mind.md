@@ -6,6 +6,9 @@ date: '2019-06-23T14:30:00.000Z'
 video:
   type: vimeo
   id: '344074003'
+speaker:
+  name: Codey Friesen
+  permalink: codey-friesen
 series: mind-control
 ---
 

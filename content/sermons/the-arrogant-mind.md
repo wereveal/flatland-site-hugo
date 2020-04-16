@@ -6,6 +6,9 @@ date: '2019-06-16T14:30:00.000Z'
 video:
   type: vimeo
   id: '342570893'
+speaker:
+  name: Adam Julch
+  permalink: adam-julch
 series: mind-control
 ---
 

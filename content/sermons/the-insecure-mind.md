@@ -6,6 +6,9 @@ date: '2019-05-26T14:30:00.000Z'
 video:
   type: vimeo
   id: '338554607'
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: mind-control
 ---
 

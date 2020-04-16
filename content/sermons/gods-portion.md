@@ -6,6 +6,9 @@ date: '2018-10-28T14:30:00.000Z'
 video:
   type: vimeo
   id: 297700882
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: joshua
 ---
 

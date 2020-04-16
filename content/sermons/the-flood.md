@@ -5,6 +5,9 @@ date: '2014-05-11T09:30:00.000Z'
 video:
   type: vimeo
   id: 94906598
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: noah
 ---
 

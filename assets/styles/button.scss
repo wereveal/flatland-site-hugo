@@ -80,3 +80,20 @@ button {
 .btn--center {
   margin: 0 auto;
 }
+
+.btn__icon--circle {
+  text-align: center;
+  padding: 0;
+
+  i {
+    padding: 12px;
+    border-radius: 50%;
+    background: var(--white);
+  }
+
+  span {
+    display: block;
+    margin-top: 8px;
+    color: var(--white);
+  }
+}

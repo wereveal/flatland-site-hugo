@@ -5,6 +5,9 @@ date: '2019-10-06T14:30:00.000Z'
 video:
   type: vimeo
   id: 364678853
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: philemon
 ---
 

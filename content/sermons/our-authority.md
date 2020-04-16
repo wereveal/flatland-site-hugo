@@ -5,6 +5,9 @@ date: '2015-06-14T09:30:00.000Z'
 video:
   type: vimeo
   id: 130686517
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: warriors
 ---
 

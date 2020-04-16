@@ -1,0 +1,14 @@
+.scroll-x {
+  width: max-content;
+  display: flex;
+
+  > * {
+    width: 320px;
+    margin-right: 8px;
+
+    @media screen and (max-width: 441px) {
+      width: 200px;
+      padding-bottom: 113px;
+    }
+  }
+}

@@ -5,5 +5,8 @@ date: '2016-06-05T09:30:00.000Z'
 video:
   type: vimeo
   id: 169468629
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 ---
 

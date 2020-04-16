@@ -5,6 +5,9 @@ date: '2017-02-19T09:30:00.000Z'
 video:
   type: vimeo
   id: 204798669
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: momentum
 ---
 

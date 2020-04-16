@@ -6,6 +6,9 @@ date: '2018-09-16T14:30:00.000Z'
 video:
   type: vimeo
   id: 290195557
+speaker:
+  name: Adam Julch
+  permalink: adam-julch
 series: drifters
 ---
 

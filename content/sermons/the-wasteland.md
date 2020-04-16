@@ -5,6 +5,9 @@ date: '2018-06-17T05:00:00.000Z'
 video:
   type: vimeo
   id: '277821716'
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: clouds-without-rain
 ---
 

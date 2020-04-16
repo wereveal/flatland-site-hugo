@@ -6,6 +6,9 @@ date: '2019-02-25T03:30:00.000Z'
 video:
   type: vimeo
   id: 319554904
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: traveling-light
 ---
 

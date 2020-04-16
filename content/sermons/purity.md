@@ -6,6 +6,9 @@ date: '2019-05-05T14:30:00.000Z'
 video:
   type: vimeo
   id: '334308858'
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: the-veil
 ---
 

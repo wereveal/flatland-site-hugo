@@ -5,6 +5,9 @@ date: '2020-03-15T14:30:00.000Z'
 video:
   type: vimeo
   id: 397791921
+speaker:
+  name: Walt Hooker
+  permalink: walt-hooker
 series: pure
 ---
 

@@ -6,6 +6,9 @@ date: '2019-02-03T15:30:00.000Z'
 video:
   type: vimeo
   id: 315113102
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: vibrant
 ---
 

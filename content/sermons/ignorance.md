@@ -6,6 +6,9 @@ date: '2019-06-30T14:30:00.000Z'
 video:
   type: vimeo
   id: '345329783'
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: sins-we-ignore
 ---
 

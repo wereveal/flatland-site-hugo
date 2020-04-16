@@ -5,6 +5,9 @@ date: '2016-10-02T09:30:00.000Z'
 video:
   type: vimeo
   id: 185223109
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: monsters
 ---
 

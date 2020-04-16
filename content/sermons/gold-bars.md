@@ -5,6 +5,9 @@ date: '2015-10-25T09:30:00.000Z'
 video:
   type: vimeo
   id: 143544620
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: prospectors
 ---
 

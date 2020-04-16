@@ -5,6 +5,9 @@ date: '2016-01-17T09:30:00.000Z'
 video:
   type: vimeo
   id: 152157187
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: all-aboard
 ---
 

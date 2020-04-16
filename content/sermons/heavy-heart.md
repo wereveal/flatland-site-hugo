@@ -6,6 +6,9 @@ date: '2019-03-10T14:30:00.000Z'
 video:
   type: vimeo
   id: 322656470
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: traveling-light
 ---
 

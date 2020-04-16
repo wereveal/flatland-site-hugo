@@ -6,6 +6,9 @@ date: '2018-12-09T15:30:00.000Z'
 video:
   type: vimeo
   id: 305383750
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: transcendent
 ---
 

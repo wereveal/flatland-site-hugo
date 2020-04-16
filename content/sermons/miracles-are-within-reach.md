@@ -5,6 +5,9 @@ date: '2018-02-18T06:00:00.000Z'
 video:
   type: vimeo
   id: '256330719'
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: within-reach
 ---
 

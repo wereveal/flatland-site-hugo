@@ -6,6 +6,9 @@ date: '2018-09-02T14:30:00.000Z'
 video:
   type: vimeo
   id: 288449541
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: drifters
 ---
 

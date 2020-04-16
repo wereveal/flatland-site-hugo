@@ -5,6 +5,9 @@ date: '2015-07-19T09:30:00.000Z'
 video:
   type: vimeo
   id: 133906311
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: seriously
 ---
 

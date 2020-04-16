@@ -6,6 +6,9 @@ date: '2019-09-15T14:30:00.000Z'
 video:
   type: vimeo
   id: 360626899
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: time-travel
 ---
 

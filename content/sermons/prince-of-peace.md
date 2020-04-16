@@ -5,6 +5,9 @@ date: '2017-12-17T05:00:00.000Z'
 video:
   type: vimeo
   id: '247708160'
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: the-gift
 ---
 

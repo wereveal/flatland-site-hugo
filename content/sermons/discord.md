@@ -6,6 +6,9 @@ date: '2019-07-07T14:30:00.000Z'
 video:
   type: vimeo
   id: 348096949
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: sins-we-ignore
 ---
 

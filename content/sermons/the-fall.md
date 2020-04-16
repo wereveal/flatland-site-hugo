@@ -5,6 +5,9 @@ date: '2019-08-25T14:30:00.000Z'
 video:
   type: vimeo
   id: 358199401
+speaker:
+  name: Rob Yanike
+  permalink: rob-yanike
 series: time-travel
 ---
 

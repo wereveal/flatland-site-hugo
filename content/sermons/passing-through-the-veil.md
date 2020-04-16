@@ -5,6 +5,9 @@ date: '2019-04-07T14:30:00.000Z'
 video:
   type: vimeo
   id: 329017898
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: the-veil
 ---
 

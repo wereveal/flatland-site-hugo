@@ -6,6 +6,9 @@ date: '2019-05-19T14:30:00.000Z'
 video:
   type: vimeo
   id: '337121113'
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: mind-control
 ---
 

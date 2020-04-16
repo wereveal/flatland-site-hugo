@@ -1,2 +1,101 @@
 {{ define "main" }}
+<section class="block block--dark block--sermon">
+    <div class="container">
+        <div class="video-container">
+            {{ if eq .Params.Video.Type "vimeo" }}
+            <iframe
+                src="https://player.vimeo.com/video/{{ .Params.Video.ID }}"
+                width="640"
+                height="360"
+                frameBorder="0"
+                webkitallowfullscreen="true"
+                mozallowfullscreen="true"
+                allowFullScreen
+                title="{{ .Title }}"
+                allow="autoplay"
+            ></iframe>
+            {{ end }}
+        </div>
+        <div class="sermon-row">
+            <div class="sermon-meta">
+                <h1>{{ .Title }}</h1>
+                {{ if isset .Params "series" }}
+                <a href="/series/{{ .Params.Series }}" class="tag">{{ .Params.Series }}</a>
+                {{ end }}
+                <p class="sermon-meta__info">
+                    <a href="/speakers/{{ .Params.Speaker.Permalink }}">{{ .Params.Speaker.Name }}</a>
+                    <span> • </span>
+                    <time>{{ .Date.Format "January 2, 2006" }}</time>
+                </p>
+            </div>
+            <div class="sermon-row__btns">
+                <a href="/give" class="btn btn__icon btn__icon--dark btn__icon--circle">
+                    <i class="fas fa-gift"></i>
+                    <span>Giving</span>
+                </a>
+                <a href="/give" class="btn btn__icon btn__icon--dark btn__icon--circle">
+                    <i class="fas fa-share"></i>
+                    <span>Share</span>
+                </a>
+            </div>
+        </div>
+        <div class="sermon-content">
+            {{ .Content }}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container container__content">
+        <div class="sermon-list__section">
+            <h2 class="sermon-section-title">
+                Recent Sermons
+            </h2>
+            <div class="sermon-grid__recent">
+                {{ $allSermons := .CurrentSection.Pages }}
+                {{ $recentSix := first 6 $allSermons.ByDate.Reverse }}
+                {{ if isset .Params "series" }}
+                    {{ $sermons := where $allSermons.ByDate.Reverse "Params.series" .Params.Series }}
+                    {{ if gt (len $sermons) 2 }}
+                        {{ range $sermons }}
+                            <a href="{{ .Permalink }}" class="sermon-link">
+                                <div class="sermon-card">
+                                    <img src="{{ .Params.Image }}" />
+                                    <div class="sermon-card__meta">
+                                        <p>{{ .Title }}</p>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                        {{ end }}
+                    {{ else }}
+                        {{ range $recentSix }}
+                            <a href="{{ .Permalink }}" class="sermon-link">
+                                <div class="sermon-card">
+                                    <img src="{{ .Params.Image }}" />
+                                    <div class="sermon-card__meta">
+                                        <p>{{ .Title }}</p>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                {{ else }}
+                    {{ range $recentSix }}
+                        <a href="{{ .Permalink }}" class="sermon-link">
+                            <div class="sermon-card">
+                                <img src="{{ .Params.Image }}" />
+                                <div class="sermon-card__meta">
+                                    <p>{{ .Title }}</p>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        <a href="/sermons" class="btn btn--gray btn--center">More Sermons</a>
+    </div>
+</section>
 {{ end }}

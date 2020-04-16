@@ -5,5 +5,8 @@ date: '2017-04-09T09:30:00.000Z'
 video:
   type: vimeo
   id: 212485451
+speaker:
+  name: Myron Pierce
+  permalink: myron-pierce
 ---
 

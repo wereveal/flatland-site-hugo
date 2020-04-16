@@ -34,15 +34,23 @@
             </div>
 
             <div class="sermon-grid--current-series">
-                {{ range where $pages "Params.series" . }}
-                <p>{{ .Title }}</p>
-                <p>🤬</p>
-                {{ end }}
+                <div class="scroll-x">
+                    {{ range where $pages.Reverse "Params.series" . }}
+                    <a href="{{ .Permalink }}" class="sermon-link">
+                        <div class="sermon-card">
+                            <img src="{{ .Params.Image }}" />
+                            <div class="sermon-card__meta">
+                                <p>{{ .Title }}</p>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                    </a>
+                    {{ end }}
+                </div>
             </div>
         </div>
         {{ end }}
         {{ end }}
-        <!-- TODO: add current series -->
 
         <div class="sermon-list__section">
             <h2 class="sermon-section-title">
@@ -55,7 +63,7 @@
                     <div class="sermon-card">
                         <img src="{{ .Params.Image }}" alt="Sermon thumbnail" />
                     </div>
-                    {{ .Title }}
+                    <p class="sermon-link__text">{{ .Title }}</p>
                 </a>
             {{ end }}
             </div>

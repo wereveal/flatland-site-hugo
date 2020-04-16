@@ -5,5 +5,8 @@ date: '2015-02-15T09:30:00.000Z'
 video:
   type: vimeo
   id: 0
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 ---
 

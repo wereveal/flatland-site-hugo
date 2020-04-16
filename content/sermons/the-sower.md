@@ -5,6 +5,9 @@ date: '2019-12-08T15:30:00.000Z'
 video:
   type: vimeo
   id: 378133470
+speaker:
+  name: Bart Wilkins
+  permalink: bart-wilkins
 series: here-below
 ---
 
