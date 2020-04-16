@@ -15,3 +15,6 @@ notAlternative = true
 [params.algolia]
 vars = ["title", "summary", "date", "permalink", "content"]
 params = ["categories", "series", "tags"]
+
+[markup.goldmark.renderer]
+unsafe= true

@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en-us" }}">
     <head>
         {{hugo.Generator}}
-        <title>{{ block "title" . }} {{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }} {{ end }}</title>
+        <title>{{ block "title" . }} {{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }} {{ end }}</title>
         <meta charset="utf-8">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">

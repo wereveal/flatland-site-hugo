@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="jumbotron--single">
+    <img src="{{ .Params.Image }}" />
+    <div class="overlay"></div>
+    <div class="jumbotron__content">
+        <h1>{{ .Title }}</h1>
+    </div>
+</section>
+<section>
+    <div class="container container--narrow container__content">
+        {{ .Content | safeHTML }}
+    </div>
+</section>
+{{ end }}

@@ -5,7 +5,7 @@ action:
     url: https://flatland.online.church
     label: Watch Live
 connect:
-    title: Experience love, authenticity, and collaboration.
+    title: Discover love, authenticity, and collaboration.
     subtitle: Checkout different ways to get involved at Flatland
     cards:
     - url: /locations
@@ -29,8 +29,8 @@ connect:
       img: https://i.imgur.com/Mc6nx2D.jpg
       imgAlt: Kids running in an easter egg hunt.
 transform:
-    title: Experience transformation // TODO
-    subtitle: Hello
+    title: Experience transformation.
+    subtitle: One of the things we say at Flatland all the time is "we love you right where you are, but we love you too much to leave you there." We're committed to seeing God transform your life as you move closer to the center of his Kingdom, and we have a number of key ways to help you do just that.
     cards:
     - url: /next-step
       title: Find your next step through our Next Step class.
