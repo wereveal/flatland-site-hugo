@@ -9,6 +9,7 @@ sections:
   label: Sermons
   create: all
   match: "**/*"
+  exclude: sermons.md
   new_doc_ext: md
 - type: directory
   path: content
