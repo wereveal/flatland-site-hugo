@@ -4,6 +4,9 @@ subtitle: Welcome to Flatland Church.
 action:
     url: https://flatland.online.church
     label: Watch Live
+secondaryAction:
+    url: /locations
+    label: Plan a Visit
 connect:
     title: Discover love, authenticity, and collaboration.
     subtitle: Checkout different ways to get involved at Flatland

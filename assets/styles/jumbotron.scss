@@ -89,6 +89,14 @@
   }
 }
 
+.jumbotron__buttons {
+  display: flex;
+
+  a:first-child {
+    margin-right: 12px;
+  }
+}
+
 .jumbotron--single {
   height: 75vh;
   position: relative;
