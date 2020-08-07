@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="jumbotron--single">
+    <img src="{{ .Params.Image }}" />
+    <div class="overlay"></div>
+    <div class="jumbotron__content">
+        <h1>{{ .Title }}</h1>
+    </div>
+</section>
+<section>
+    <div class="container container__content container--aside">
+        <div>
+            {{ .Content | safeHTML }}
+        </div>
+        <aside class="event__aside">
+            <ul class="no-style">
+                {{ with .Params.Day }}
+                <li>
+                <p>
+                    <span class="far fa-calendar"></span>
+                    <spn>{{ . }}</spn>
+                </p>
+                </li>
+                {{ end }}
+                {{ with .Params.Time }}
+                <li>
+                <p>
+                    <span class="far fa-clock"></span>
+                    <spn>{{ . }}</spn>
+                </p>
+                </li>
+                {{ end }}
+                {{ with .Params.Location }}
+                <li>
+                <p>
+                    <span class="fas fa-map-marker-alt"></span>
+                    <spn>{{ . }}</spn>
+                </p>
+                </li>
+                {{ end }}
+                {{ with .Params.Price }}
+                <li>
+                <p>
+                    <span class="fas fa-dollar-sign"></span>
+                    <spn>{{ . }}</spn>
+                </p>
+                </li>
+                {{ end }}
+            </ul>
+        </aside>
+    </div>
+</section>
+{{ end }}
