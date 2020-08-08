@@ -4,6 +4,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   h2 {
@@ -29,6 +30,10 @@
   }
 }
 
+.container--narrow.container--left {
+  margin: 0 auto 0 10%;
+}
+
 .container__cards--full-width {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -46,6 +51,7 @@
 
 .container__content {
   padding: 48px 0;
+  font-size: 18px;
 
   p {
     line-height: 2;
@@ -53,6 +59,15 @@
     &:not(:first-child) {
       margin-top: 20px;
     }
+  }
+
+  ul {
+    padding-left: 36px;
+    margin-top: 12px;
+  }
+
+  li {
+    margin: 12px 0;
   }
 }
 

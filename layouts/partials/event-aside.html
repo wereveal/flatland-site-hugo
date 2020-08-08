@@ -1,0 +1,34 @@
+<ul class="no-style">
+    {{ with .Params.Day }}
+    <li>
+        <p>
+            <span class="far fa-calendar"></span>
+            <spn>{{ . }}</spn>
+        </p>
+    </li>
+    {{ end }}
+    {{ with .Params.Time }}
+    <li>
+        <p>
+            <span class="far fa-clock"></span>
+            <spn>{{ . }}</spn>
+        </p>
+    </li>
+    {{ end }}
+    {{ with .Params.Location }}
+    <li>
+        <p>
+            <span class="fas fa-map-marker-alt"></span>
+            <spn>{{ delimit . " | " }}</spn>
+        </p>
+    </li>
+    {{ end }}
+    {{ with .Params.Price }}
+    <li>
+        <p>
+            <span class="fas fa-dollar-sign"></span>
+            <spn>{{ . }}</spn>
+        </p>
+    </li>
+    {{ end }}
+</ul>

@@ -14,6 +14,22 @@
         {{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
         <script src="https://kit.fontawesome.com/70268be1d2.js" crossorigin="anonymous"></script>
+        <script>
+            window.templite = (() => {
+              const RGX = /{(.*?)}/g;
+              return (str, mix) => {
+                return str.replace(RGX, (x, key, y) => {
+                  x = 0;
+                  y = mix;
+                  key = key.trim().split('.');
+                  while (y && x < key.length) {
+                    y = y[key[x++]];
+                  }
+                  return y != null ? y : '';
+                });
+              }
+            })();
+        </script>
         {{ block "meta" . }}
         {{ end }}
     </head>

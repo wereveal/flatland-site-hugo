@@ -5,6 +5,7 @@ assetsDir = "assets"
 
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
+section = ["HTML", "RSS", "JSON"]
 
 [outputFormats.Algolia]
 baseName = "algolia"

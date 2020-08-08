@@ -1,6 +1,98 @@
 {{ define "main" }}
-<h1>Events</h1>
-{{ range .Pages }}
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-{{ end }}
+<section>
+    <div class="container container__content">
+        <h1>{{ .Title }}</h1>
+        <div class="events">
+            <aside>
+                <h3>Filter events</h3>
+                <h4>Locations</h4>
+                <ul id="locations" class="filter__list">
+
+                </ul>
+                <h4>Categories</h4>
+                <ul id="categories" class="filter__list">
+
+                </ul>
+            </aside>
+            <div class="events__container" id="events-container">
+                {{ with .Params.EmptyReason }}
+                    <h2>{{ . }}</h2>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/template" id="event-template">
+    <div class="event-card">
+        <a href="{permalink}">
+            <div class="event-card__img">
+                <img src="{image}" alt="{imageAlt}" />
+            </div>
+            <h2>{title}</h2>
+            <div class="event-card__meta">
+                <div>
+                    <span class="far fa-calendar"></span>
+                    <span>{day}</span>
+                </div>
+                <div>
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span>{locations}</span>
+                </div>
+            </div>
+            <p>{description} &mldr;</p>
+        </a>
+    </div>
+</script>
+<script>
+    const makeListItem = (type) => (val) => {
+      const li = document.createElement('li');
+      li.dataset.type = type;
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.id = (`${type}-${val}`).replace(/\s/g, '-');
+      checkbox.className = 'filter-list-item';
+
+      const label = document.createElement('label');
+      label.htmlFor = checkbox.id;
+      label.innerText = val;
+
+      li.append(checkbox, label);
+
+      return li;
+    };
+
+    const render = (events, filters) => {
+        const template = document.getElementById('event-template').innerText;
+        document.getElementById('events-container').innerHTML = events.sort(/* TODO: write sort algo */).map((event) => {
+          return window.templite(template, {
+            day: event.day,
+            locations: event.location.join(' | '),
+            title: event.title,
+            image: event.image,
+            imageAlt: event.imageAlt || `${event.title} poster`,
+            description: event.description.slice(0, 130),
+            permalink: event.permalink,
+          });
+        }).join('\n');
+    };
+
+  !async function() {
+    const events = await fetch(`/events/index.json`).then((d) => d.json());
+    const categories = events.reduce((acc, { category }) => acc.includes(category) ? acc : [...acc, category], []).sort();
+    const locations = events.reduce((acc, { location }) => {
+      location.forEach((loc) => {
+        if (!acc.includes(loc)) {
+            acc.push(loc);
+        }
+      });
+      return acc;
+    }, []).sort();
+
+    document.getElementById('locations').append(...locations.map(makeListItem('location')));
+    document.getElementById('categories').append(...categories.map(makeListItem('category')));
+
+    render(events, {});
+  }();
+</script>
 {{ end }}
