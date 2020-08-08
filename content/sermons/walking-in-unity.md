@@ -1,13 +1,12 @@
 ---
-title: Walking in Unity
-image: 'https://i.vimeocdn.com/video/846082113_780x439.webp'
-date: '2020-01-12T15:30:00.000Z'
+title: "Walking in Unity"
+image: "https://i.vimeocdn.com/video/846082113_780x439.webp"
+date: "2020-01-12T15:30:00.000Z"
 video:
-  type: vimeo
+  type: "vimeo"
   id: 384355817
 speaker:
-  name: Bart Wilkins
-  permalink: bart-wilkins
-series: all-grown-up
+  name: "Bart Wilkins"
+  permalink: "bart-wilkins"
+series: "all-grown-up"
 ---
-

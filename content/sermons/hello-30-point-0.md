@@ -1,12 +1,11 @@
 ---
-title: Hello 30.0
-image: 'https://i.imgur.com/MuLYIpM.jpg'
-date: '2015-02-15T09:30:00.000Z'
+title: "Hello 30.0"
+image: "https://i.imgur.com/MuLYIpM.jpg"
+date: "2015-02-15T09:30:00.000Z"
 video:
-  type: vimeo
+  type: "vimeo"
   id: 0
 speaker:
-  name: Bart Wilkins
-  permalink: bart-wilkins
+  name: "Bart Wilkins"
+  permalink: "bart-wilkins"
 ---
-

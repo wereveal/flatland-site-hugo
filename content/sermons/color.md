@@ -1,12 +1,11 @@
 ---
-title: Color
-image: 'https://i.imgur.com/MuLYIpM.jpg'
-date: '2014-04-20T09:30:00.000Z'
+title: "Color"
+image: "https://i.imgur.com/MuLYIpM.jpg"
+date: "2014-04-20T09:30:00.000Z"
 video:
-  type: vimeo
+  type: "vimeo"
   id: 92828517
 speaker:
-  name: Bart Wilkins
-  permalink: bart-wilkins
+  name: "Bart Wilkins"
+  permalink: "bart-wilkins"
 ---
-

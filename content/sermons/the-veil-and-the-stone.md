@@ -1,13 +1,12 @@
 ---
-title: The Veil and the Stone
-image: 'https://i.vimeocdn.com/video/777278813.webp?mw=1000&mh=548'
-date: '2019-04-21T14:30:00.000Z'
+title: "The Veil and the Stone"
+image: "https://i.vimeocdn.com/video/777278813.webp?mw=1000&mh=548"
+date: "2019-04-21T14:30:00.000Z"
 video:
-  type: vimeo
+  type: "vimeo"
   id: 331706816
 speaker:
-  name: Bart Wilkins
-  permalink: bart-wilkins
-series: the-veil
+  name: "Bart Wilkins"
+  permalink: "bart-wilkins"
+series: "the-veil"
 ---
-

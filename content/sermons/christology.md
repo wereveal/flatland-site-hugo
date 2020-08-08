@@ -1,13 +1,12 @@
 ---
-title: Christology
-image: 'https://i.imgur.com/MuLYIpM.jpg'
-date: '2014-11-23T09:30:00.000Z'
+title: "Christology"
+image: "https://i.imgur.com/MuLYIpM.jpg"
+date: "2014-11-23T09:30:00.000Z"
 video:
-  type: vimeo
+  type: "vimeo"
   id: 112635875
 speaker:
-  name: Rob Yanike
-  permalink: rob-yanike
-series: ecclesia
+  name: "Rob Yanike"
+  permalink: "rob-yanike"
+series: "ecclesia"
 ---
-

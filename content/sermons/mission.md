@@ -1,12 +1,11 @@
 ---
-title: Mission
-image: 'https://i.imgur.com/MuLYIpM.jpg'
-date: '2017-04-09T09:30:00.000Z'
+title: "Mission"
+image: "https://i.imgur.com/MuLYIpM.jpg"
+date: "2017-04-09T09:30:00.000Z"
 video:
-  type: vimeo
+  type: "vimeo"
   id: 212485451
 speaker:
-  name: Myron Pierce
-  permalink: myron-pierce
+  name: "Myron Pierce"
+  permalink: "myron-pierce"
 ---
-
