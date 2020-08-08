@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="jumbotron--single">
-    <img src="{{ .Params.Image }}" />
+    <img src="{{ .Params.Image }}" {{ with .Params.ImagePosition }} style="--position: {{ . }}" {{ end }} />
     <div class="overlay"></div>
     <div class="jumbotron__content">
         <h1>{{ .Title }}</h1>
