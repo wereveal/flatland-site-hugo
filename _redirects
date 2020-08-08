@@ -1,0 +1,5 @@
+/the-move https://the-move-2020.netlify.app/the-move 200!
+/watch/* /sermons/:splat 301
+/watch /sermons 301
+/enjoy/* /events/:splat 301
+/enjoy /events 301

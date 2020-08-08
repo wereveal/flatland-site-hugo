@@ -1,8 +1,2 @@
 [context.production.environment]
 HUGO_VERSION = "0.68.3"
-
-[[redirects]]
-    from = "/the-move"
-    to = "https://the-move-2020.netlify.app/the-move"
-    status = 200
-    force = true
