@@ -35,7 +35,7 @@ transform:
     title: Experience transformation.
     subtitle: One of the things we say at Flatland all the time is "we love you right where you are, but we love you too much to leave you there." We're committed to seeing God transform your life as you move closer to the center of his Kingdom, and we have a number of key ways to help you do just that.
     cards:
-    - url: /next-step
+    - url: /classes/next-step/
       title: Find your next step through our Next Step class.
       icon: 
       img: https://i.imgur.com/vLzs1f7.jpg

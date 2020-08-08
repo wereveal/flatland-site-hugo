@@ -28,5 +28,4 @@ Omaha, NE 68116, US
 
 ### Price
 
-## Get signed up below
-
+$15 (includes cost of ticket and dessert)

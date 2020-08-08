@@ -13,6 +13,11 @@
         </div>
         <div>
             {{ .Content | safeHTML }}
+            {{ with .Params.Action }}
+            <div class="spacer" style="--top: 2">
+                <a href="{{ .Url }}" class="btn btn--primary">{{ .Label }}</a>
+            </div>
+            {{ end }}
         </div>
         <aside class="event__aside">
             {{ partial "event-aside" . }}
