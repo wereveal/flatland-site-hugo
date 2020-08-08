@@ -61,7 +61,7 @@ footerAd:
     title: Receive training, fulfill your calling
     subtitle: Omaha School of Ministry is a ministry training program from Flatland Church.  
     action:
-      url: /osm
+      url: https://omasom.com/
       label: Find Out More
     img: https://i.imgur.com/STjqK5j.jpg
 ---

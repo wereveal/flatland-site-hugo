@@ -1,0 +1,4 @@
+backend:
+  name: github
+  branch: master
+  repo: flatlandchurch/flatland-site-hugo
