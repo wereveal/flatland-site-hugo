@@ -1,6 +1,6 @@
 ---
 title: Marriage Night
-startDate: 2020-09-13T18:00:00
+startDate: 2020-09-12T18:00:00
 day: September 12, 2020
 time: 6:00 PM - 9:30 PM
 location: 

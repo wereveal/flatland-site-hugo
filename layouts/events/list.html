@@ -2,18 +2,19 @@
 <section>
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
+        <button class="btn btn--gray" id="filter-toggle">Filter</button>
+        <aside class="events-filter">
+            <h3>Filter events</h3>
+            <h4>Locations</h4>
+            <ul id="locations" class="filter__list">
+
+            </ul>
+            <h4>Categories</h4>
+            <ul id="categories" class="filter__list">
+
+            </ul>
+        </aside>
         <div class="events">
-            <aside>
-                <h3>Filter events</h3>
-                <h4>Locations</h4>
-                <ul id="locations" class="filter__list">
-
-                </ul>
-                <h4>Categories</h4>
-                <ul id="categories" class="filter__list">
-
-                </ul>
-            </aside>
             <div class="events__container" id="events-container">
                 {{ with .Params.EmptyReason }}
                     <h2>{{ . }}</h2>
@@ -29,6 +30,7 @@
                 <img src="{image}" alt="{imageAlt}" />
             </div>
             <h2>{title}</h2>
+            <span class="event-card__category event-card__category--{categoryClass}">{category}</span>
             <div class="event-card__meta">
                 <div>
                     <span class="far fa-calendar"></span>
@@ -64,23 +66,46 @@
 
     const render = (events, filters) => {
         const template = document.getElementById('event-template').innerText;
-        document.getElementById('events-container').innerHTML = events.sort(/* TODO: write sort algo */).map((event) => {
-          return window.templite(template, {
-            day: event.day,
-            locations: event.location.join(' | '),
-            title: event.title,
-            image: event.image,
-            imageAlt: event.imageAlt || `${event.title} poster`,
-            description: event.description.slice(0, 130),
-            permalink: event.permalink,
-          });
-        }).join('\n');
+        document.getElementById('events-container').innerHTML = events
+          .filter(({ category, location }) => {
+            const isCategory = filters.category.includes(category);
+            const isLocation = location.some((loc) => filters.location.includes(loc));
+
+            if (!filters.category.length && !filters.location.length) return true;
+
+            return isCategory || isLocation;
+          })
+          .sort((a, b) => {
+            if (a.startDate > b.startDate) return 1;
+            if (b.startDate > a.startDate) return -1;
+            return 0;
+          })
+          .map((event) => {
+              return window.templite(template, {
+                day: event.day,
+                locations: event.location.join(' | '),
+                title: event.title,
+                image: event.image,
+                imageAlt: event.imageAlt || `${event.title} poster`,
+                description: event.description.slice(0, 130),
+                permalink: event.permalink,
+                category: event.category,
+                categoryClass: event.category.toLowerCase().replace(/\s/g, '-'),
+              });
+            })
+          .join('\n');
     };
 
   !async function() {
     const events = await fetch(`/events/index.json`).then((d) => d.json());
-    const categories = events.reduce((acc, { category }) => acc.includes(category) ? acc : [...acc, category], []).sort();
-    const locations = events.reduce((acc, { location }) => {
+    const currentEvents = events.filter(({ startDate }) => {
+      const eventDate = new Date(`${startDate}-0500`).toISOString();
+      const now = new Date().toISOString();
+      return now <= eventDate;
+    });
+
+    const categories = currentEvents.reduce((acc, { category }) => acc.includes(category) ? acc : [...acc, category], []).sort();
+    const locations = currentEvents.reduce((acc, { location }) => {
       location.forEach((loc) => {
         if (!acc.includes(loc)) {
             acc.push(loc);
@@ -92,7 +117,31 @@
     document.getElementById('locations').append(...locations.map(makeListItem('location')));
     document.getElementById('categories').append(...categories.map(makeListItem('category')));
 
-    render(events, {});
+    const filters = {
+      location: [],
+      category: [],
+    };
+
+    document.querySelectorAll('.filter-list-item').forEach((el) => {
+      el.addEventListener('change', (e) => {
+        const type = e.target.parentElement.dataset.type;
+        const label = e.target.parentElement.querySelector('label').innerText;
+        if (e.target.checked) {
+          filters[type].push(label);
+        } else {
+          filters[type] = filters[type].filter((d) => d !== label);
+        }
+        render(currentEvents, filters);
+      });
+    });
+
+    render(currentEvents, filters);
+
+    document.getElementById('filter-toggle').addEventListener('click', () => {
+      const el = document.querySelector('aside.events-filter');
+      const open = el.className.split(' ').includes('open');
+      el.className = open ? 'events-filter' : 'events-filter open';
+    });
   }();
 </script>
 {{ end }}
