@@ -62,7 +62,7 @@ Flatland Church | Helping people move to the center of God's Kingdom
                 <h2>Weekly Sermon</h2>
                 <a href="/sermons" class="btn btn--primary">Watch More Sermons</a>
             </div>
-            {{ $latestSermon := where .Site.Pages "Section" "sermons" }}
+            {{ $latestSermon := where .Site.RegularPages "Section" "sermons" }}
             {{ with index $latestSermon.ByDate.Reverse 0 }}
                 <a href="{{ .Permalink }}" class="sermon-link">
                     <div class="sermon-card sermon-card__home--featured">
