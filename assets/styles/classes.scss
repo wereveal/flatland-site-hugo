@@ -1,0 +1,45 @@
+.class-card {
+  @include card;
+
+  &.class-card--featured {
+    padding-bottom: 35%;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-bottom: 100%;
+
+    &.class-card--featured {
+      padding-bottom: 100%;
+    }
+  }
+}
+
+.class-grid {
+  @include card-grid;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+a.class-link {
+  text-decoration: none;
+}
+
+a.class-link:hover,
+a.class-link:hover .class-card--featured,
+a.class-link:hover .class-card__home--featured {
+  @include card-link--hover;
+}
+
+.class-card .overlay {
+  @include card-overlay;
+}
+
+.class-card__meta {
+  @include card-meta;
+
+  p {
+    line-height: 1.2 !important;
+  }
+}

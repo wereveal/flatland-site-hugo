@@ -9,6 +9,12 @@
   --deep-purple: #140F2D;
   --jet: #010400;
 
+  --tag-yellow: #FFC400;
+  --tag-green: #57D9A3;
+  --tag-purple: #998DD9;
+  --tag-red: #FF7452;
+  --tag-pink: #F686BD;
+
   --section-border: #dfdfe2;
 }
 
@@ -39,6 +45,10 @@ ul.no-style {
   list-style: none;
 }
 
+// Mixins
+@import 'card.mixin';
+
+// Basics
 @import 'link';
 @import 'titles';
 @import 'button';
@@ -56,6 +66,8 @@ ul.no-style {
 @import 'footer';
 @import 'video';
 @import 'events';
+@import 'classes';
+@import 'locations';
 
 // Modifiers
 @import 'scroll';

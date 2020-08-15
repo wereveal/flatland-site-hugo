@@ -2,6 +2,33 @@
 <section>
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
+        {{ $featured := index (sort .Pages "Params.classNumber") 0 }}
+        <a href="{{ $featured.Permalink }}" class="class-link">
+            <div class="class-card class-card--featured">
+                <img src="{{ $featured.Params.Image }}" alt="Class thumbnail" />
+                <div class="class-card__meta">
+                    <span class="tag tag--{{ $featured.Params.Category.ClassName }}">{{ $featured.Params.Category.Label }}</span>
+                    <p>{{ $featured.Title }}</p>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </a>
+        <div class="class-list__section">
+            <div class="class-grid">
+                {{ range after 1 (sort .Pages "Params.classNumber") }}
+                <a href="{{.Permalink}}" class="class-link">
+                    <div class="class-card">
+                        <img src="{{ .Params.Image }}" alt="Class thumbnail" />
+                        <div class="class-card__meta">
+                            <span class="tag tag--{{ .Params.Category.ClassName }}">{{ .Params.Category.Label }}</span>
+                            <p>{{ .Title }}</p>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+        </div>
     </div>
 </section>
 {{ end }}

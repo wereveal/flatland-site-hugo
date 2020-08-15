@@ -1,5 +1,8 @@
 /the-move https://the-move-2020.netlify.app/the-move 200!
 
+/locations /locations/flatland-online 200
+
+# Old site redirects
 /watch/ /sermons 301
 /watch/* /sermons/:splat 301
 

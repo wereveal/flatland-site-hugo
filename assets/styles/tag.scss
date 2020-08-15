@@ -11,3 +11,24 @@
   text-decoration: none;
   font-weight: 800;
 }
+
+.tag--yellow {
+  background: var(--tag-yellow);
+}
+
+.tag--green {
+  background: var(--tag-green);
+}
+
+.tag--red {
+  background: var(--tag-red);
+}
+
+.tag--purple {
+  background: var(--tag-purple);
+}
+
+.tag--pink,
+.tag--marriage {
+  background: var(--tag-pink);
+}

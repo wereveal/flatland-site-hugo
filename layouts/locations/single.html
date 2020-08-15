@@ -1,0 +1,59 @@
+{{ define "main" }}
+<section class="jumbotron--single">
+    <img src="{{ .CurrentSection.Params.Image }}" />
+    <div class="overlay"></div>
+    <div class="jumbotron__content">
+        <h1>{{ .CurrentSection.Title }}</h1>
+    </div>
+</section>
+
+<section>
+    <div class="container container--narrow container__content">
+        <h2 id="locations">Locations</h2>
+        <div class="location-cards">
+            {{ $currentPermalink := .Permalink }}
+            {{ range (sort .CurrentSection.Pages "Params.Order") }}
+            <a href="{{ .Permalink }}#locations" class="card-link">
+                <div class="location-card {{ if eq .Permalink $currentPermalink }}active{{ end }}">
+                    <img src="{{ .Params.Image }}" alt="Photo of the {{ .Params.LocationName }} facilities" />
+                    <div class="location-card__meta">
+                        <p>{{ .Params.LocationName }}</p>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+        <div class="location-directions">
+            <div class="location-directions__address">
+                <p>
+                {{ with .Params.Address.Name }}
+                    {{ . }}<br />
+                {{ end }}
+                {{ with .Params.Address.Street }}
+                    {{ . }}<br />
+                {{ end }}
+                {{ with .Params.Address.Locale }}
+                    {{ . }}<br />
+                {{ end }}
+                </p>
+            </div>
+            {{ with .Params.Address.Link }}
+                <div class="location-directions__link">
+                    <a href="{{ . }}" class="btn btn--gray">Directions</a>
+                </div>
+            {{ end }}
+        </div>
+        <h2>Times</h2>
+        <div class="location-times">
+            {{ range .Params.Times }}
+            <div class="time-card">
+                <p class="time-card__day">{{ .day }}</p>
+                <p><strong>{{ .time }}</strong></p>
+            </div>
+            {{ end }}
+        </div>
+        {{ .Content | safeHTML }}
+    </div>
+</section>
+{{ end }}
