@@ -1,11 +1,20 @@
 <div class='gallery'>
     {{ $items := .Inner | transform.Unmarshal  }}
+    {{ $isLink := .Get "link" }}
     {{ range $items }}
+        {{ if $isLink }}
+        <a href="#{{ urlize .label }}" class="event-card">
+        {{ else }}
         <div class="event-card">
+        {{ end }}
             <div class="event-card__img">
                 <img src="{{ .image }}" alt="{{ .label }}" />
             </div>
             <p><strong>{{ .label }}</strong></p>
+        {{ if $isLink }}
+        </a>
+        {{ else }}
         </div>
+        {{ end }}
     {{ end }}
 </div>

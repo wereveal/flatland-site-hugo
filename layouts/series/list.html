@@ -2,6 +2,26 @@
 <section>
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
+        <div class="sermon-grid">
+            {{ range .Paginator.Pages }}
+            <a href="{{ .Permalink }}" class="sermon-link">
+                <div class="sermon-card">
+                    <img src="{{ .Params.Image }}" alt="Sermon thumbnail" />
+                </div>
+                <p class="sermon-link__text">{{ .Title }}</p>
+            </a>
+            {{ end }}
+        </div>
+
+        <div class="pagination">
+            {{ if .Paginator.HasPrev }}
+            <a class="btn btn--gray" href="{{ .Paginator.Prev.URL }}">Newer Sermons</a>
+            {{ end }}
+            <p>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</p>
+            {{ if .Paginator.HasNext }}
+            <a class="btn btn--gray" href="{{ .Paginator.Next.URL }}">Older Sermons</a>
+            {{ end }}
+        </div>
     </div>
 </section>
 {{ end }}

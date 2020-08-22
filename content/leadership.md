@@ -2,3 +2,59 @@
 title: Leadership
 image: https://i.imgur.com/VXjsnkb.jpg
 ---
+
+{{< gallery link="true" >}}
+- label: Bart Wilkins
+  image: https://i.imgur.com/yWeQMT7.png
+- label: Jen Wilkins
+  image: https://i.imgur.com/06ksTj0.png
+- label: Josie Laurent
+  image: https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/leadership%2Fjosie-demuth.png?alt=media&token=d26fa7c7-b4bb-49c9-80ed-1471a57600dc
+- label: Zach Jones
+  image: https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/leadership%2Fzach-jones.png?alt=media&token=6c7cfcab-acd6-459d-b7a7-0cbf3a48407c
+- label: Kevin Nygren
+  image: https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Screen%20Shot%202019-10-24%20at%204.49.52%20PM.png?alt=media&token=4997d7c7-cc0d-4f15-8f1d-d04d2bc9e984
+- label: Codey Friesen
+  image: https://i.imgur.com/6rY2BGR.png
+- label: Mitchell McNaney
+  image: https://i.imgur.com/kzFD7Ly.png
+{{< /gallery >}}
+
+## Bart Wilkins
+
+_Lead Pastor_
+
+Bart is the founding and lead pastor of Flatland Church. He is responsible for creating and casting vision, as well as overseeing a growing teaching team. Under Bart’s leadership Flatland Church has continued to achieve its vision of inspiring people to move closer to the center of God’s Kingdom where real life transformation happens.
+
+## Jen Wilkins
+
+_Integrator_
+
+Jen oversees our staff and is responsible for translating the church’s vision into monthly, weekly, and even daily steps. Jen helped found the church with her husband Bart in 1996 and has been integral to the church’s success since day one.
+
+## Josie Laurent
+
+_Director of Administration_
+
+Josie leads our finance, donations, membership, and support departments. She also oversees the care of our facilities and vehicles.
+
+## Zach Jones
+
+_Director of Worship_
+
+Zach leads our worship, tech, and creative arts departments. 
+
+## Kelvin Nygren
+
+_174 Campus Pastor_
+
+Kelvin pastors our 174 campus and is a key member of our teaching team.
+
+## Codey Friesen
+
+_Youth Pastor_
+
+## Mitchell McNaney
+
+_Head of Omaha School of Ministry_
+
