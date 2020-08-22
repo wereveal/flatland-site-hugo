@@ -1,0 +1,9 @@
+<div class="location-times">
+    {{ $items := .Inner | transform.Unmarshal  }}
+    {{ range $items }}
+    <div class="time-card">
+        <p class="time-card__day">{{ .day }}</p>
+        <p><strong>{{ .time }}</strong></p>
+    </div>
+    {{ end }}
+</div>

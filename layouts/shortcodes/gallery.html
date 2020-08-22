@@ -1,0 +1,11 @@
+<div class='gallery'>
+    {{ $items := .Inner | transform.Unmarshal  }}
+    {{ range $items }}
+        <div class="event-card">
+            <div class="event-card__img">
+                <img src="{{ .image }}" alt="{{ .label }}" />
+            </div>
+            <p><strong>{{ .label }}</strong></p>
+        </div>
+    {{ end }}
+</div>

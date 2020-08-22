@@ -61,13 +61,14 @@
     }
   }
 
-  ul {
+  ul, ol {
     padding-left: 36px;
     margin-top: 12px;
   }
 
   li {
     margin: 12px 0;
+    line-height: 2;
   }
 }
 
