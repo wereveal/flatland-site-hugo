@@ -20,10 +20,14 @@
             <div class="sermon-meta">
                 <h1>{{ .Title }}</h1>
                 {{ if isset .Params "series" }}
-                <a href="/series/{{ .Params.Series }}" class="tag">{{ .Params.Series }}</a>
+                    {{ $path := path.Join "series" .Params.Series}}
+                    {{ with .Site.GetPage $path }}
+                    <a href="{{ .RelPermalink }}" class="tag">{{ .Params.Title }}</a>
+                    {{ end }}
                 {{ end }}
                 <p class="sermon-meta__info">
-                    <a href="/speakers/{{ .Params.Speaker.Permalink }}">{{ .Params.Speaker.Name }}</a>
+<!--                    <a href="/speakers/{{ .Params.Speaker.Permalink }}">{{ .Params.Speaker.Name }}</a>-->
+                    <span>{{ .Params.Speaker.Name }}</span>
                     <span> • </span>
                     <time>{{ .Date.Format "January 2, 2006" }}</time>
                 </p>

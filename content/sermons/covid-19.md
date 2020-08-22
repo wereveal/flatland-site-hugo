@@ -6,7 +6,7 @@ video:
   type: "vimeo"
   id: 444063896
 speaker:
-  name: "Bart Wilkins"
-  permalink: "bart-wilkins"
+  name: "Mitchell McNaney"
+  permalink: "mitchell-mcnaney"
 series: "hot-topics"
 ---
