@@ -13,7 +13,3 @@ Here at Flatland we want to help you move closer to the center of God’s kingdo
 
 ## Class Structure
 
-- Week 1: Who We Are
-- Week 2: What We Believe
-- Week 3: ...
-- Week 4: ...
