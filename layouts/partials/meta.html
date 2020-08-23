@@ -1,0 +1,19 @@
+{{ with .Params.Description }}
+<meta name="description" content="{{ . }}" />
+<meta name="twitter:description" content="{{ . }}" />
+<meta property="og:description" content="{{ . }}" />
+{{ else }}
+<meta name="description" content='{{ partial "description" . }}' />
+<meta name="twitter:description" content='{{ partial "description" . }}' />
+<meta property="og:description" content='{{ partial "description" . }}' />
+{{ end }}
+
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:title" content="{{ .Title | plainify }}" />
+<meta property="og:title" content="{{ .Title | plainify }}" />
+
+<meta name="twitter:image" content="{{ .Params.Image }}" />
+<meta property="og:image" content="{{ .Params.Image }}" />
+
+<meta property="og:url" content="{{ .Permalink }}" />

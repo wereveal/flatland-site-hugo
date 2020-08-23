@@ -6,23 +6,17 @@
         <meta charset="utf-8">
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
-        <link rel="icon" type="image/x-icon" href="https://flatlandchurch.com/static/fl_glyph_favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/fl_glyph_favicon.ico">
         <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/icons%2Ficon-96x96.png?alt=media&amp;token=0465654f-8340-4f63-b258-57d4c32400f8">
         <link rel="apple-touch-icon" sizes="152x152" href="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/icons%2Ficon-152x152.png?alt=media&amp;token=f1dbc73a-9804-4617-8f5a-60bcb440d37b">
         <link rel="apple-touch-icon" sizes="180x180" href="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/icons%2Ficon-167x167.png?alt=media&amp;token=81113e67-3e07-42ff-8f02-17f5e3aee3b6">
         <link rel="apple-touch-icon" sizes="167x167" href="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/icons%2Ficon-180x180.png?alt=media&amp;token=62c6340a-ce77-40a1-bcd7-2a39afff82e3">
         {{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
-        <link rel="canonical" href={data.canonical} />
-        <meta name="description" content={data.description} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={data.description} />
-        <meta name="twitter:image" content={data.image} />
-        <meta property="og:url" content={data.canonical} />
-        <meta property="og:description" content={data.description} />
-        <meta property="og:image" content={data.image} />
-        <meta property="og:title" content={title} />
+        <link rel="canonical" href={{ .Permalink }} />
+
+        {{ partial "meta" . }}
+
         <script src="https://kit.fontawesome.com/70268be1d2.js" crossorigin="anonymous"></script>
         <script>
             window.templite = (() => {
@@ -42,8 +36,6 @@
         </script>
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
-        {{ block "meta" . }}
-        {{ end }}
     </head>
     <body>
         {{ partial "header.html" . }}
