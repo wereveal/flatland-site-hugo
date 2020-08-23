@@ -1,0 +1,21 @@
+<nav class="menu">
+    <button class="btn__icon" id="close">
+        <span class="fas fa-times"></span>
+    </button>
+    <ul>
+        <li><a href="/about">I'm New</a></li>
+        <li id="watch-link"><a href="/sermons">Sermons</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/give">Give</a></li>
+        <li><a href="/groups">Groups</a></li>
+    </ul>
+</nav>
+
+<script>
+    !function() {
+      document.getElementById('close').addEventListener('click', () => {
+        document.querySelector('.menu').className = 'menu';
+      });
+    }();
+</script>

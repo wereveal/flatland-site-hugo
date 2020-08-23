@@ -29,6 +29,7 @@
             </button>
         </div>
     </nav>
+    {{ partial "menu.html" . }}
     <script>
       (({ height }) => {
         if (window.location.pathname === '/') {
@@ -46,5 +47,12 @@
           window.addEventListener('scroll', scrollListener);
         }
       })(document.querySelector('header').getBoundingClientRect());
+
+      !function() {
+        document.querySelector('.btn__icon--hamburger').addEventListener('click', () => {
+          const menu = document.querySelector('.menu');
+          menu.className = menu.className.includes('active') ? 'menu' : 'menu active';
+        })
+      }();
     </script>
 </header>
