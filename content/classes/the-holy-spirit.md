@@ -5,4 +5,6 @@ category:
     className: green
 classNumber: 201
 image: https://i.imgur.com/1Ac8isE.png
+childcare: true
+price: $15
 ---

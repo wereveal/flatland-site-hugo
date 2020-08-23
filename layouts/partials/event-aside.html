@@ -31,4 +31,12 @@
         </p>
     </li>
     {{ end }}
+    {{ if isset .Params "childcare" }}
+    <li>
+        <p>
+            <span class="fas fa-child"></span>
+            <spn>{{- if eq .Params.Childcare true -}}Childcare Available{{- else -}}Childcare <strong>Not</strong> Available{{- end -}}</spn>
+        </p>
+    </li>
+    {{ end }}
 </ul>

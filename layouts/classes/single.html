@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="jumbotron--single">
+    <img src="{{ .Params.Image }}" />
+    <div class="overlay"></div>
+    <div class="jumbotron__content">
+        <h1>{{ .Title }}</h1>
+    </div>
+</section>
+<section>
+    <div class="container container__content container--aside">
+        <div class="event__aside">
+            {{ partial "event-aside" . }}
+        </div>
+        <div>
+            {{ .Content | safeHTML }}
+            <h2>Upcoming Classes</h2>
+        </div>
+        <aside class="event__aside">
+            {{ partial "event-aside" . }}
+        </aside>
+    </div>
+</section>
+<script>
+
+</script>
+{{ end }}

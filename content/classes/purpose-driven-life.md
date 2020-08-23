@@ -5,4 +5,6 @@ category:
     className: red
 classNumber: 102
 image: https://i.imgur.com/pfjcINc.png
+childcare: true
+price: $15
 ---
