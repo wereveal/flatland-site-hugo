@@ -271,6 +271,7 @@
       const { data, included } = await fetch(`/.netlify/functions/forms?id=${id}`).then((d) => d.json());
 
       const form = document.getElementById('shortcode-form');
+      form.id = id;
       form.append(createPersonFields());
       data.forEach(addFields(form, included));
       form.append(createButton('Submit'));
