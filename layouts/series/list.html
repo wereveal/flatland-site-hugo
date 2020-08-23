@@ -15,11 +15,11 @@
 
         <div class="pagination">
             {{ if .Paginator.HasPrev }}
-            <a class="btn btn--gray" href="{{ .Paginator.Prev.URL }}">Newer Sermons</a>
+            <a class="btn btn--gray" href="{{ .Paginator.Prev.URL }}">Newer Series</a>
             {{ end }}
             <p>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</p>
             {{ if .Paginator.HasNext }}
-            <a class="btn btn--gray" href="{{ .Paginator.Next.URL }}">Older Sermons</a>
+            <a class="btn btn--gray" href="{{ .Paginator.Next.URL }}">Older Series</a>
             {{ end }}
         </div>
     </div>

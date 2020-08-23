@@ -1,7 +1,52 @@
 {{ define "main" }}
+
+{{ $paginator := (.Paginator 13).Pages }}
+{{ if not .Paginator.HasPrev }}
+    {{ $paginator = (.Paginator 13).Pages }}
+{{ end }}
+
 <section>
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
+        <div class="blog__container">
+            {{ $latest := index $paginator.ByDate.Reverse 0 }}
+            {{ if not .Paginator.HasPrev }}
+            <a href="{{ $latest.Permalink }}" class="sermon-link">
+                <div class="sermon-card sermon-card--featured">
+                    {{ with $latest }}
+                    <img src="{{ .Params.Image }}" />
+                    <div class="sermon-card__meta">
+                        <span class="tag">Latest Post</span>
+                        <p>{{ .Title }}</p>
+                    </div>
+                    <div class="overlay"></div>
+                    {{ end }}
+                </div>
+            </a>
+            {{ end }}
+            <div class="blog-grid">
+                {{ range after 1 $paginator.ByDate.Reverse }}
+                <a href="{{ .Permalink }}" class="sermon-link">
+                    <div class="blog-card">
+                        <div class="blog-card__img">
+                            <img src="{{ .Params.Image }}" alt="Post thumbnail" />
+                        </div>
+                        <h2>{{ .Title }}</h2>
+                        <span class="tag blog-card__category">{{ index .Params.Topics 0 }}</span>
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+        <div class="pagination">
+            {{ if .Paginator.HasPrev }}
+            <a class="btn btn--gray" href="{{ .Paginator.Prev.URL }}">Newer Posts</a>
+            {{ end }}
+            <p>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</p>
+            {{ if .Paginator.HasNext }}
+            <a class="btn btn--gray" href="{{ .Paginator.Next.URL }}">Older Posts</a>
+            {{ end }}
+        </div>
     </div>
 </section>
 {{ end }}
