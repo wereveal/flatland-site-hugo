@@ -1,6 +1,7 @@
 ---
 title: Helping people move to the <ins>center</ins> of God's Kingdom.
 subtitle: Welcome to Flatland Church.
+image: https://i.imgur.com/EPVkooV.jpg
 action:
     url: https://flatland.online.church
     label: Watch Live
