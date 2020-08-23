@@ -14,6 +14,11 @@
         {{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
         <link rel="canonical" href={{ .Permalink }} />
+        <meta name="author" content="Flatland Church">
+        <meta property="fb:app_id" content="1007632336053609" />
+        <meta name="twitter:site" content="@flatlandchurch" />
+        <meta property="place:location:latitude" content="41.3039152">
+        <meta property="place:location:longitude" content="-96.1377482">
 
         {{ partial "meta" . }}
 
@@ -38,6 +43,44 @@
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
     </head>
     <body>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Church",
+                        "name": "Flatland Church",
+                        "url": "https://flatlandchurch.com",
+                        "openingHours": "Su 07:30-12:30",
+                        "address": {
+                            "addressLocality": "Omaha",
+                            "addressCountry": "USA",
+                            "postalCode": "68114",
+                            "streetAddress": "4801 N 144th Street",
+                            "email": "info@flatlandchurch.com"
+                        }
+                    },
+                    {
+                        "@type": "Organization",
+                        "name": "Flatland Church",
+                        "url": "https://flatlandchurch.com",
+                        "logo": "https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/icons%2Ficon-167x167.png?alt=media&amp;token=81113e67-3e07-42ff-8f02-17f5e3aee3b6",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+14024929111",
+                            "contactType": "customer service",
+                            "areaServed": "US",
+                            "availableLanguage": "en"
+                        },
+                        "sameAs": [
+                            "https://facebook.com/flatlandchurchomaha",
+                            "https://twitter.com/flatlandchurch",
+                            "https://instagram.com/flatlandchurch"
+                        ]
+                    }
+                ]
+            }
+        </script>
         {{ partial "header.html" . }}
         {{ block "main" . }}
         {{ end }}
