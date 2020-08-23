@@ -1,6 +1,7 @@
 <form id="shortcode-form">
 </form>
 
+<script src="/sendForm.js"></script>
 <script data-form-id='{{- .Get "id" -}}' id="getter">
   function createHeader(title, content) {
     const div = document.createElement('div');
@@ -253,18 +254,6 @@
     btn.innerText = 'Saved!';
     btn.disabled = true;
   }
-
-  function sendForm(formID, body) {
-    const baseURL = `https://flatland-forms-api-auevpolm5q-uc.a.run.app/forms/${formID}`;
-    return fetch(baseURL, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify(body),
-    }).then((d) => d.json());
-  }
-
 
   !async function() {
       const id = parseInt(document.getElementById('getter').dataset.formId.trim(), 10);
