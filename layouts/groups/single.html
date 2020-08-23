@@ -2,6 +2,44 @@
 <section>
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
+        <div class="events">
+            <div class="events__container" id="events-container">
+            </div>
+        </div>
     </div>
 </section>
+<script type="text/template" id="event-template">
+    <div class="event-card">
+        <a href="{permalink}">
+            <div class="event-card__img">
+                <img src="{image}" alt="{imageAlt}" />
+            </div>
+            <h2>{title}</h2>
+            <span class="tag event-card__category tag--{categoryClass}">{category}</span>
+            <div class="event-card__meta">
+                <div>
+                    <span class="far fa-calendar"></span>
+                    <span>{day}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</script>
+<script>
+  (async () => {
+    const data = await fetch('/.netlify/functions/groups').then((d) => d.json());
+    const container = document.querySelector('#events-container');
+    data.forEach((d) => {
+      container.append(window.templite(document.getElementById('event-template').innerText, {
+        permalink: d.url,
+        image: d.image,
+        imageAlt: `Life group header image`,
+        title: d.name,
+        day: d.schedule,
+        category: d.groupType,
+        categoryClass: d.groupColor,
+      }))
+    });
+  })();
+</script>
 {{ end }}
