@@ -29,17 +29,19 @@
   (async () => {
     const data = await fetch('/.netlify/functions/groups').then((d) => d.json());
     const container = document.querySelector('#events-container');
-    data.forEach((d) => {
-      container.append(window.templite(document.getElementById('event-template').innerText, {
-        permalink: d.url,
-        image: d.image,
-        imageAlt: `Life group header image`,
-        title: d.name,
-        day: d.schedule,
-        category: d.groupType,
-        categoryClass: d.groupColor,
-      }))
-    });
+    container.innerHTML = data.sort((a, b) => {
+      if (a.name > b.name) return 1;
+      if (b.name > a.name) return -1;
+      return 0;
+    }).map((d) => window.templite(document.getElementById('event-template').innerText, {
+      permalink: d.url,
+      image: d.image,
+      imageAlt: `Life group header image`,
+      title: d.name,
+      day: d.schedule,
+      category: d.groupType,
+      categoryClass: d.groupColor,
+    })).join('\n');
   })();
 </script>
 {{ end }}
