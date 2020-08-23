@@ -32,7 +32,7 @@ exports.handler = async function(event, context, callback) {
 
   return callback(null, {
     body: JSON.stringify(data.data
-      .filter(({ attributes }) => attributes.name.includes(isNextStep ? 'Next Step' : name))
+      .filter(({ attributes }) => attributes.name.includes(isNextStep ? 'Next Step' : name) && (isNextStep && attributes.enrollment_strategy !== 'closed'))
       .map(({ attributes }) => ({
         eventTime: isNextStep ? getTime(attributes.name) : attributes.event_time_summary,
         publicUrl: isNextStep ?
