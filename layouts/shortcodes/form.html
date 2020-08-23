@@ -1,6 +1,7 @@
-<script>
+<script data-form-id='{{- .Get "id" -}}' id="getter">
     !async function() {
-      const data = await fetch(`/.netlify/functions/forms?id={{- .Get "id" -}}`).then((d) => d.json());
+      const id = parseInt(document.getElementById('getter').dataset.formId.trim(), 10);
+      const data = await fetch(`/.netlify/functions/forms?id=${id}`).then((d) => d.json());
       console.log(data);
     }();
 </script>
