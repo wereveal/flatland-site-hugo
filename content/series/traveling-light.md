@@ -4,3 +4,7 @@ image: "https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/s
 date: "2019-02-17T06:02:02.000Z"
 ---
 The weight of this world can be overwhelming. It's full of rules, demands, cares and responsibilities. Thankfully, Traveling Light begins this Sunday. Based on the teachings of Jesus in Luke 10-14, this 6-week sermon series will lighten your load.
+
+## Gospel of Luke Overview
+
+{{< youtube XIb_dCIxzr0 >}}
