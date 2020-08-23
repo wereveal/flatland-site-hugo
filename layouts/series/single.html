@@ -1,2 +1,29 @@
 {{ define "main" }}
+<section class="jumbotron--single">
+    <img src="{{ .Params.Image }}" {{ with .Params.ImagePosition }} style="--position: {{ . }}" {{ end }} />
+    <div class="overlay"></div>
+    <div class="jumbotron__content">
+        <h1>{{ .Title }}</h1>
+    </div>
+</section>
+<section>
+    <div class="container container--narrow container__content">
+        {{ .Content }}
+        <h2>Messages</h2>
+        <div class="sermon-grid__recent">
+            {{ $allSermons :=  where .Site.RegularPages "Section" "sermons"  }}
+            {{ range where $allSermons.ByDate.Reverse "Params.series" .File.BaseFileName }}
+            <a href="{{ .Permalink }}" class="sermon-link">
+                <div class="sermon-card">
+                    <img src="{{ .Params.Image }}" />
+                    <div class="sermon-card__meta">
+                        <p>{{ .Title }}</p>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
 {{ end }}

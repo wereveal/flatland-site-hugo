@@ -72,6 +72,14 @@ a.sermon-link:hover .sermon-card__home--featured {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 8px;
   margin: 24px 0 48px;
+
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .sermon-link__text {

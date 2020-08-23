@@ -28,6 +28,10 @@
   img {
     @include card-image;
   }
+
+  p {
+    line-height: 1.2 !important;
+  }
 }
 
 @mixin card-grid {
