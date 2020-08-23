@@ -14,13 +14,41 @@
         <div>
             {{ .Content | safeHTML }}
             <h2>Upcoming Classes</h2>
+            <div class="upcoming-times">
+                <div class="loading" id="class-times-loading"></div>
+            </div>
         </div>
         <aside class="event__aside">
             {{ partial "event-aside" . }}
         </aside>
     </div>
 </section>
+<script type="text/template" id="class-card-template">
+    <p><strong>{date}</strong></p>
+    <a href="{url}" class="btn btn--gray">Register</a>
+</script>
 <script>
+  (async () => {
+    const data = await fetch('/.netlify/functions/classes?name={{ .Title }}').then((d) => d.json());
+    document.getElementById('class-times-loading').remove();
+    const upcomingSlot = document.querySelector('.upcoming-times');
 
+    if (!data || !data.length) {
+      const div = document.createElement('div');
+      div.className = `empty-slot`;
+      div.innerText = `There are no upcoming sessions for this class.`;
+      upcomingSlot.append(div);
+    }
+
+    data.forEach(({ eventTime, publicUrl }) => {
+      const card = document.createElement('div');
+      card.className = `upcoming-time__card`;
+      card.innerHTML = window.templite(document.getElementById('class-card-template').innerText, {
+        date: eventTime,
+        url: publicUrl,
+      });
+      upcomingSlot.append(card);
+    });
+  })();
 </script>
 {{ end }}
