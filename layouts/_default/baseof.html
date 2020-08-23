@@ -13,6 +13,16 @@
         <link rel="apple-touch-icon" sizes="167x167" href="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/icons%2Ficon-180x180.png?alt=media&amp;token=62c6340a-ce77-40a1-bcd7-2a39afff82e3">
         {{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
+        <link rel="canonical" href={data.canonical} />
+        <meta name="description" content={data.description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={data.description} />
+        <meta name="twitter:image" content={data.image} />
+        <meta property="og:url" content={data.canonical} />
+        <meta property="og:description" content={data.description} />
+        <meta property="og:image" content={data.image} />
+        <meta property="og:title" content={title} />
         <script src="https://kit.fontawesome.com/70268be1d2.js" crossorigin="anonymous"></script>
         <script>
             window.templite = (() => {
@@ -30,6 +40,8 @@
               }
             })();
         </script>
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
         {{ block "meta" . }}
         {{ end }}
     </head>
