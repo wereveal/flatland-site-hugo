@@ -1,2 +1,6 @@
-{{ $template := .Get "template" }}
-{{ partial $template . }}
+<script>
+    !async function() {
+      const data = await fetch(`/.netlify/functions/forms?id={{ .Get "id" }}`).then((d) => d.json());
+      console.log(data);
+    }();
+</script>
