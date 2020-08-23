@@ -36,7 +36,7 @@ exports.handler = async function(event, context, callback) {
       .map(({ attributes }) => ({
         eventTime: isNextStep ? getTime(attributes.name) : attributes.event_time_summary,
         publicUrl: isNextStep ?
-          `https://flatland.churchcenter.com/groups/core-classes/${attributes.name.replace(/\w/g, '-').toLowerCase()}` :
+          `https://flatland.churchcenter.com/groups/core-classes/${attributes.name.replace(/[\s\/]/g, '-').toLowerCase()}` :
           attributes.public_url,
         schedule: isNextStep ? attributes.schedule : undefined,
       }))),
