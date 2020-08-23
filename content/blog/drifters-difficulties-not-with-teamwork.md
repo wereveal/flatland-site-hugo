@@ -4,7 +4,7 @@ image: "https://images.unsplash.com/photo-1521798761656-4e74e79120ca?ixlib=rb-0.
 date: "2018-09-28T15:07:55.000Z"
 author:
   name: "Bill Reveal"
-  role: "Research Team"
+  position: "Research Team"
 topics:
   - "devotionals"
 ---
