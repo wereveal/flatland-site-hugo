@@ -1,0 +1,18 @@
+<div class="resources-grid resources-grid--small">
+    {{ $items := .Inner | transform.Unmarshal  }}
+    {{ $page := .Site.GetPage "/resources" }}
+    {{ range $items }}
+        {{ $tag := .tag }}
+        {{ $page := $page.GetPage .url }}
+        <a href="{{ $page.Permalink }}" class="sermon-link">
+            <div class="resource-card">
+                <img src="{{ $page.Params.Image }}" />
+                <div class="sermon-card__meta">
+                    <span class="tag">{{ $tag }}</span>
+                    <p>{{ $page.Title }}</p>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </a>
+    {{ end }}
+</div>

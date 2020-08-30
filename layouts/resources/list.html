@@ -2,6 +2,35 @@
 <section>
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
+        <h2>Spiritual Disciplines</h2>
+        <div class="resources-grid">
+            {{ range where .RegularPages "Params.category" "Spiritual Discipline" }}
+                <a href="{{ .Permalink }}" class="sermon-link">
+                    <div class="sermon-card">
+                        <img src="{{ .Params.Image }}" />
+                        <div class="sermon-card__meta">
+                            <p>{{ .Title }}</p>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </a>
+            {{ end }}
+        </div>
+        <h2>Series Resources</h2>
+        {{ $allSeries := where .Site.RegularPages "Section" "series" }}
+        <div class="resources-grid">
+            {{ range where $allSeries "Params.hasresources" true }}
+                <a href="{{ .Permalink }}" class="sermon-link">
+                    <div class="sermon-card">
+                        <img src="{{ .Params.Image }}" />
+                        <div class="sermon-card__meta">
+                            <p>{{ .Title }}</p>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </a>
+            {{ end }}
+        </div>
     </div>
 </section>
 {{ end }}

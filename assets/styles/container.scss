@@ -25,6 +25,10 @@
 .container--narrow {
   width: 50%;
 
+  @media screen and (max-width: 960px) {
+    width: 75%;
+  }
+
   @media screen and (max-width: 441px) {
     width: 80%;
   }
@@ -69,6 +73,43 @@
   li {
     margin: 12px 0;
     line-height: 2;
+  }
+
+  blockquote {
+    margin: 24px 0 24px 48px;
+    position: relative;
+
+    @media screen and (max-width: 960px) {
+      margin-left: 24px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      font-family: "Times New Roman", serif;
+      font-weight: 800;
+      font-size: 120px;
+      z-index: -1;
+      color: var(--blue);
+      opacity: 0.4;
+    }
+
+    &::before {
+      content: '“';
+      left: -24px;
+      top: -24px;
+    }
+
+    &::after {
+      content: '”';
+      right: 0;
+      bottom: -60px;
+    }
   }
 }
 
