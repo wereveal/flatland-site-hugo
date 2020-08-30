@@ -16,7 +16,11 @@ section.block {
     width: 50%;
     line-height: 2;
 
-    @media screen and (max-width: 411px) {
+    @media screen and (max-width: 960px) {
+      width: 75%;
+    }
+
+    @media screen and (max-width: 441px) {
       width: 100%;
     }
   }
