@@ -15,7 +15,7 @@ connect:
     - url: /locations
       title: Find a location and time that work for you.
       icon: fas fa-map-marker-alt
-      img: https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/IMG_1305.JPG?alt=media&token=c3bf8aaf-535b-4b68-83f7-70da6b8ea8ce
+      img: https://i.imgur.com/jJ7jQns.jpg
       imgAlt: Front of Flatland 144 campus
     - url: /groups
       title: Join a life group.
