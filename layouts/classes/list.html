@@ -3,7 +3,7 @@
     <div class="container container__content">
         <h1>{{ .Title }}</h1>
         {{ $featured := index (sort .Pages "Params.classNumber") 0 }}
-        <a href="{{ $featured.Permalink }}" class="class-link">
+        <a href="{{ $featured.Permalink }}" class="class-link" aria-label="{{ $featured.Title }}">
             <div class="class-card class-card--featured">
                 <img src="{{ $featured.Params.Image }}" alt="Class thumbnail" />
                 <div class="class-card__meta">
@@ -16,7 +16,7 @@
         <div class="class-list__section">
             <div class="class-grid">
                 {{ range after 1 (sort .Pages "Params.classNumber") }}
-                <a href="{{.Permalink}}" class="class-link">
+                <a href="{{.Permalink}}" class="class-link" aria-label="{{ .Title }}">
                     <div class="class-card">
                         <img src="{{ .Params.Image }}" alt="Class thumbnail" />
                         <div class="class-card__meta">

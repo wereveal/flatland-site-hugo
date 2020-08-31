@@ -3,7 +3,7 @@
     {{ $isLink := .Get "link" }}
     {{ range $items }}
         {{ if $isLink }}
-        <a href="#{{ urlize .label }}" class="event-card">
+        <a href="#{{ urlize .label }}" class="event-card" aria-label="{{ .label }}">
         {{ else }}
         <div class="event-card">
         {{ end }}

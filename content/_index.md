@@ -1,7 +1,7 @@
 ---
 title: Helping people move to the <ins>center</ins> of God's Kingdom.
 subtitle: Welcome to Flatland Church.
-image: https://i.imgur.com/EPVkooV.jpg
+image: https://i.imgur.com/1feeiht.jpg
 action:
     url: https://flatland.online.church
     label: Watch Live
@@ -51,7 +51,7 @@ transform:
     - url: /resources
       title: Discover resources to move to the center.
       icon: fas fa-book
-      img: https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
+      img: https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80
 prayer:
     title: Need Prayer?
     subtitle: Prayer is at the core of everything we are at Flatland. The Apostle Paul encouraged his friends to never stop praying. We want to prayer for you in your time of need.
@@ -64,7 +64,7 @@ footerAd:
     action:
       url: https://omasom.com/
       label: Find Out More
-    img: https://i.imgur.com/STjqK5j.jpg
+    img: https://i.imgur.com/P45CPOm.jpg
 ---
 
 Flatland is all about moving people to the center of God's kingdom. Through creative presentations and messages you will discover what God's kingdom is all about and how being a part of it will transform your life in a powerful way.

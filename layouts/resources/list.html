@@ -5,7 +5,7 @@
         <h2>Spiritual Disciplines</h2>
         <div class="resources-grid">
             {{ range where .RegularPages "Params.category" "Spiritual Discipline" }}
-                <a href="{{ .Permalink }}" class="sermon-link">
+                <a href="{{ .Permalink }}" class="sermon-link" aria-label="{{ .Title }}">
                     <div class="sermon-card">
                         <img src="{{ .Params.Image }}" />
                         <div class="sermon-card__meta">
@@ -20,7 +20,7 @@
         {{ $allSeries := where .Site.RegularPages "Section" "series" }}
         <div class="resources-grid">
             {{ range where $allSeries "Params.hasresources" true }}
-                <a href="{{ .Permalink }}" class="sermon-link">
+                <a href="{{ .Permalink }}" class="sermon-link" aria-label="{{ .Title }}">
                     <div class="sermon-card">
                         <img src="{{ .Params.Image }}" />
                         <div class="sermon-card__meta">

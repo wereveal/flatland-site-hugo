@@ -4,7 +4,7 @@
         <h1>{{ .Title }}</h1>
         <div class="sermon-grid">
             {{ range .Paginator.Pages }}
-            <a href="{{ .Permalink }}" class="sermon-link">
+            <a href="{{ .Permalink }}" class="sermon-link" aria-label="{{ .Title }}">
                 <div class="sermon-card">
                     <img src="{{ .Params.Image }}" alt="Sermon thumbnail" />
                 </div>

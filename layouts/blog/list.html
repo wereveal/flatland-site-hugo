@@ -11,7 +11,7 @@
         <div class="blog__container">
             {{ $latest := index $paginator.ByDate.Reverse 0 }}
             {{ if not .Paginator.HasPrev }}
-            <a href="{{ $latest.Permalink }}" class="sermon-link">
+            <a href="{{ $latest.Permalink }}" class="sermon-link" aria-label="{{ $latest.Title }}">
                 <div class="sermon-card sermon-card--featured">
                     {{ with $latest }}
                     <img src="{{ .Params.Image }}" />
@@ -26,7 +26,7 @@
             {{ end }}
             <div class="blog-grid">
                 {{ range after 1 $paginator.ByDate.Reverse }}
-                <a href="{{ .Permalink }}" class="sermon-link">
+                <a href="{{ .Permalink }}" class="sermon-link" aria-label="{{ .Title }}">
                     <div class="blog-card">
                         <div class="blog-card__img">
                             <img src="{{ .Params.Image }}" alt="Post thumbnail" />

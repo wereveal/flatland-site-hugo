@@ -5,7 +5,9 @@ image: https://i.imgur.com/I0fxJTM.jpg
 
 Flatland is a member of a cooperative fellowship of churches called the [Assemblies of God](https://ag.org/). The list below is something that we every church in our fellowship affirms, and we ask that each of our [Homes of Influence](/homes-of-influence) affirm them too. Of course, a list without an explanation can often be unhelpful, that's why we encourage you to attend our Next Step class to learn more about our vision, values, and beliefs.
 
-<a href="/classes/next-step" class="btn btn--primary">Join a Next Step Class</a>
+{{< action href="/classes/next-step" context="primary" >}}
+Join a Next Step Class
+{{< /action >}}  
 
 ## Fundamental Truths
 

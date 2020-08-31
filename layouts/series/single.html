@@ -13,7 +13,7 @@
         <div class="sermon-grid__recent">
             {{ $allSermons :=  where .Site.RegularPages "Section" "sermons"  }}
             {{ range where $allSermons.ByDate.Reverse "Params.series" .File.BaseFileName }}
-            <a href="{{ .Permalink }}" class="sermon-link">
+            <a href="{{ .Permalink }}" class="sermon-link" aria-label="{{ .Title }}">
                 <div class="sermon-card">
                     <img src="{{ .Params.Image }}" />
                     <div class="sermon-card__meta">

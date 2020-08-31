@@ -4,7 +4,7 @@
     {{ range $items }}
         {{ $tag := .tag }}
         {{ $page := $page.GetPage .url }}
-        <a href="{{ $page.Permalink }}" class="sermon-link">
+        <a href="{{ $page.Permalink }}" class="sermon-link" aria-label="{{ $page.Title }}">
             <div class="resource-card">
                 <img src="{{ $page.Params.Image }}" />
                 <div class="sermon-card__meta">
