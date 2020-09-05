@@ -1,0 +1,8 @@
+<p class="prayer">
+    {{ with .Get "title" }}<span><strong>{{ . }}</strong></span>{{ end }}
+    {{ $items := .Inner | transform.Unmarshal  }}
+    {{ range $items }}
+    <span {{ with .indent }}class="indent"{{ end }}>{{ .content }}</span>
+    {{ end }}
+    <span><strong>Amen.</strong></span>
+</p>

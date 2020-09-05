@@ -123,3 +123,11 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.prayer span {
+  display: block;
+
+  &.indent {
+    margin-left: 24px;
+  }
+}

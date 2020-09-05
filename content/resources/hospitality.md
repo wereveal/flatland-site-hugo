@@ -1,6 +1,6 @@
 ---
 title: Hospitality
-image: https://images.unsplash.com/photo-1509456592530-5d38e33f3fdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80 
+image: https://images.unsplash.com/photo-1509456592530-5d38e33f3fdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80 
 category: Spiritual Discipline
 ---
 

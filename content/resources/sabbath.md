@@ -1,7 +1,7 @@
 ---
 title: Sabbath
 category: Spiritual Discipline
-image: https://images.unsplash.com/photo-1560769420-7c9f384e1f2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2249&q=80
+image: https://images.unsplash.com/photo-1560769420-7c9f384e1f2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80
 ---
 
 In Genesis 2:2-3 we're told that on the seventh day, God had finished creating the heavens and the earth. So God rested, and he declared that the seventh day would be a holy day, set apart from the others.
