@@ -51,7 +51,7 @@ Decide what time you will pray the prayer each day. Copy down by hand or print o
 
 ## Recommendations
 
-As beneficial as praying a general prayer of confession to God, there is also value in confessing your sins to your brothers and sisters in Christ. In this way, you are able to unburden yourself, just as you do when praying to God directly, while introducing accountability and partnership in prayer. Be sure to make this time intentional, making it clear this is not banter, nor a counseling session, but a time for you to practice the starting point of repentance by confessing your sin.s
+As beneficial as praying a general prayer of confession to God is, there is also value in confessing your sins to your brothers and sisters in Christ. In this way, you are able to unburden yourself, just as you do when praying to God directly, while introducing accountability and partnership in prayer. Be sure to make this time intentional, making it clear this is not banter, nor a counseling session, but a time for you to practice the starting point of repentance by confessing your sins.
 
 ## Reading
 
