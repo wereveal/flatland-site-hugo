@@ -22,4 +22,6 @@ Each week's discipline is accompanied by a discussion of the practice, preparati
   tag: Week 1
 - url: /resources/hospitality
   tag: Week 2
+- url: /resources/confession
+  tag: Week 3
 {{< /resource-links >}}

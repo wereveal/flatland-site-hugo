@@ -1,6 +1,7 @@
 ---
 title: Confession
 image: https://images.unsplash.com/photo-1542046398918-2d21581386ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&h=400&q=80
+category: Spiritual Discipline
 ---
 
 The practice of confession is not often associated with Protestant, especially Evangelical, traditions. We often imagine this being a private experience in a dark box, confessing our secret sins to a concerned party on the other side of a partition. While we may think of this as a stuffy practice, there is great freedom that comes from confessing our sins to God.
