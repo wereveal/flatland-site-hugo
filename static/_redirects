@@ -8,3 +8,13 @@
 
 /enjoy/ /events 301
 /enjoy/* /events/:splat 301
+
+/move/groups /groups 301
+/move/classes /classes 301
+/move/classes/* /classes/:splat 301
+
+/visit/beliefs /beliefs 301
+/visit/kids /kids 301
+/visit/leadership /leadership 301
+/visit/students /youth 301
+/visit/values /about#our-values 301
