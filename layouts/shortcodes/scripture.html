@@ -1,0 +1,26 @@
+{{ $ref := .Get "ref" }}
+{{ $id := .Get "id" }}
+<div class="verse {{ $id }}">
+    <h3>{{ $ref }}</h3>
+    <div></div>
+</div>
+<script data-verse="{{ $ref }}" id="{{ $id }}">
+    (async function() {
+      const ref = document.querySelector('#{{ $id }}').dataset.verse;
+
+      const baseUrl = 'https://api.esv.org/v3/passage/html/';
+      const query = '&include-passage-references=false&include-footnotes=false&include-footnote-body=false&include-headings=false&include-short-copyright=false&include-copyright=false&wrapping-div=true&include-audio-link=false';
+      const search = `?q=${ref.replace(/\s/g, '+')}`;
+      const url = [baseUrl, search, query].join('');
+
+      const data = await fetch(url, {
+        headers: {
+          'Authorization': 'Token 643e0a72c5b087496d637b2b672ba3b6f2f35795',
+        }
+      }).then((d) => d.json());
+
+      const className = '.verse.{{ $id }}';
+      const container = document.querySelector(`${className} > div`);
+      container.innerHTML = data.passages[0];
+    })();
+</script>

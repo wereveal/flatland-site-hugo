@@ -1,0 +1,10 @@
+<p class="prayer">
+    {{ $items := .Inner | transform.Unmarshal  }}
+    {{ range $items }}
+    <span>{{ .call }}</span>
+    {{ with .response }}
+    <span><strong>{{ . }}</strong></span>
+    {{ end }}
+    {{ end }}
+    <span><strong>Amen.</strong></span>
+</p>
