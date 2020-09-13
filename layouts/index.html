@@ -28,7 +28,7 @@ Flatland Church | Helping people move to the center of God's Kingdom
 
     {{/* Content Blurb */}}
     {{ with .Content }}
-        <section class="block block--alt">
+        <section class="block">
             <div class="container container__stack">
                 <div class="section-title">
                     {{ . }}
@@ -36,6 +36,25 @@ Flatland Church | Helping people move to the center of God's Kingdom
             </div>
         </section>
     {{ end }}
+
+    {{/* Today Page Section */}}
+    <section class="block block--alt">
+        <div class="container container--two-col">
+            <div class="section-title">
+                <h2>{{ .Params.Today.Title }}</h2>
+                <p>{{ .Params.Today.Subtitle | markdownify }}</p>
+                <a href="{{ .Params.Today.Url }}" class="btn btn--primary">Check It Out</a>
+            </div>
+            <div class="iphone">
+                <div class="iphone-svg">
+                    {{ partial "iphone.html" . }}
+                </div>
+                <div class="iframe-container">
+                    <iframe src="{{ .Params.Today.Url }}"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
     {{/* Connect Section */}}
     <section class="block">

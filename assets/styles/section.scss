@@ -24,6 +24,10 @@ section.block {
       width: 100%;
     }
   }
+
+  a.btn {
+    margin: 0 auto;
+  }
 }
 
 .section-title--left {
@@ -31,6 +35,24 @@ section.block {
 
   p {
     margin: 0;
+  }
+
+  a.btn {
+    margin: 0;
+  }
+}
+
+.section-title--right {
+  text-align: right;
+
+  p {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  a.btn {
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -78,4 +100,44 @@ section.block--dark {
   left: 0;
   z-index: -1;
   transition: background 0.2s ease-out;
+}
+
+.iphone {
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -128px;
+  min-width: 400px;
+
+  @media screen and (max-width: 411px) {
+    display: none;
+  }
+
+  .iframe-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 0;
+    padding-bottom: 171%;
+  }
+}
+
+.iframe-container iframe {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 11%;
+  bottom: 0;
+  left: 17.5%;
+  border: 0;
+  z-index: -1;
+}
+
+.iphone-svg {
+  width: 100%;
+  z-index: 1000;
+
+  svg {
+    width: 100%;
+  }
 }
