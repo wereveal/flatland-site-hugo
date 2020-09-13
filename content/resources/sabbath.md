@@ -8,15 +8,15 @@ In Genesis 2:2-3 we're told that on the seventh day, God had finished creating t
 
 Many many years later, God had adopted a family of people known as the Israelites. For 300 years they were enslaved by an oppressive empire, but God came in and rescued them freely. Having rescued them, God created a treaty, or a covenant, with Israel. One of the crucial elements of that covenant was that the Israelites remember the seventh day and keep it holy by doing no work on that day. God was calling his people to be different from the non-stop 24/7 culture of the big bad empire they had just departed. He wanted them to understand that He was the giver and sustainer of life. So the Israelite people would cease one day out of the week. They would do no field work, sell nothing in the marketplace, nor buy anything from the marketplace. The entire economy would shut down once a week.
 
+## Preparation
+
+Because Sabbath involves an abstension from commerce, practicing it will necessarily require intentional preparation. In Jewish culture, they would have a day dedicated to preparation. If you choose to practice Sabbath on Saturday, this would mean that Friday afternoon you'll want to get all of your shopping done for Saturday.
+
 ## Practice
 
 You and your family, take one day off this week. No work (outside of preparing a meal), no participating in commerce.
 
 Also, because of the amount of advertising that is done on social media, we would strongly encourage you to stay away from it for this one day. Better yet, why not turn off the phone for a day.
-
-## Preparation
-
-Because Sabbath involves an abstension from commerce, practicing it will necessarily require intentional preparation. In Jewish culture, they would have a day dedicated to preparation. If you choose to practice Sabbath on Saturday, this would mean that Friday afternoon you'll want to get all of your shopping done for Saturday.
 
 ## Recommendations
 

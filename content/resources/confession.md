@@ -10,6 +10,10 @@ Late in David's life, he committed profound sin. He abused his authority as king
 
 In the same way, we ought at all times to confess our sins both to God and to our brothers and sisters. This is often referred to as a "penitential" act, something we do that is uncomfortable and perhaps at times painful, but is a crucial component to repentance.
 
+## Preparation
+
+Decide what time you will pray the prayer each day. Copy down by hand or print off the prayer and keep it somewhere you'll be able to find it when it's time to pray.
+
 ## Practice
 
 Each day you alone, or as a family, pray out loud a prayer of general confession. We've provided one below, but feel free to improvise the language as makes you comfortable. This specific prayer has been employed by Christians for centuries and is often prayed as part of a daily practice of prayer and Scripture reading.
@@ -44,10 +48,6 @@ Each day you alone, or as a family, pray out loud a prayer of general confession
 - content: to the glory of your holy Name.
   indent: true
 {{< /prayer >}}
-
-## Preparation
-
-Decide what time you will pray the prayer each day. Copy down by hand or print off the prayer and keep it somewhere you'll be able to find it when it's time to pray.
 
 ## Recommendations
 

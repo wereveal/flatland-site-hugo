@@ -1,6 +1,7 @@
 ---
 title: Daily Prayer
 image: https://images.unsplash.com/photo-1563645774182-d14c97bd52fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80
+category: Spiritual Discipline
 ---
 
 When God saved the Israelites from captivity in Egypt, He created a covenant treaty with them that included protection, long-life, and flourishing in the land that was promised. The Israelites' end of the bargain was to do justice, observe feasts of remembrance, and to live lives that reflected the holiness of God. 
@@ -14,6 +15,10 @@ Babylon is where we meet Daniel, a faithful Jew who grew up experiencing the aff
 During the time of Jesus, there was a fervent push to hear the Hebrew Scriptures read aloud as well as a robust personal prayer life. Jesus taught his disciples to pray what we now call "The Lord's Prayer," and his disciples in turn taught the people they discipled to pray that prayer three times a day. 
 
 For hundreds of years, Jesus' Church has remained devoted to Him, quite unlike the Israelites. But at times, like the Israelites, the reading of Scripture would stagnate or even fall out of daily practice altogether. Not to mention that the Bible is a big book and it's tricky to know where to start. Throughout the centuries, men and women have put together rubrics for combining deep devotional prayer alongside the daily reading of scripture, folks like Benedict, Luther, and Cramner. This practice is often referred to as Daily Prayer.
+
+## Preparation
+
+Set aside 30 minutes sometime in your day that you or your family can pray through the guide together.
 
 ## Practice
 
@@ -37,10 +42,6 @@ The provided prayer guides can be found below.
 - url: /resources/daniel-daily-office-day-7
   tag: Day 7
 {{< /resource-links >}}
-
-## Preparation
-
-Set aside 30 minutes sometime in your day that you or your family can pray through the guide together.
 
 ## Reading
 

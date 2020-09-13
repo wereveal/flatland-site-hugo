@@ -18,13 +18,13 @@ This corruption of the human heart was so pervasive, that God performed the ulti
 
 Jesus gave the ultimate gift. His very life. His demand of radical generosity on his followers is a reflection of his own self-giving love.
 
-## Practice
-
-Invite someone into your home for a meal which you prepare (no take out for this one).
-
 ## Preparation
 
 Hospitality is one way of practicing Jesus self-giving love by playing host in the same way that God serves as generous host for all mankind. Remember that this is not a time for you to show off or start your burgeoning restaurant business. This is an opportunity to serve someone and demonstrate your love for them.
+
+## Practice
+
+Invite someone into your home for a meal which you prepare (no take out for this one).
 
 ## Recommendations
 
