@@ -29,6 +29,11 @@ button {
   color: var(--black);
 }
 
+.btn.btn--danger {
+  background: var(--red);
+  color: var(--white);
+}
+
 .btn.btn--gray {
   background: var(--gray);
   color: var(--black);

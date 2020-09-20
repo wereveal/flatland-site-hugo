@@ -95,6 +95,79 @@
                 a.className = 'nav-button--live';
             }
         </script>
+        <script type="text/template" id="modal-template">
+            <div class="modal-overlay" id="global-modal">
+                <div class="modal">
+                    <div class="modal-border modal-border--{appearance}">
+                        <div class="modal-header">
+                            <button class="btn__icon">
+                                <span class="fas fa-times"></span>
+                            </button>
+                        </div>
+                        <h1>{title}</h1>
+                        <div class="content">
+                            {content}
+                        </div>
+                        <div class="action">
+                            <a href="{action.uri}" class="btn btn--{appearance}">{action.label}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script>
+            !async function() {
+              const data = await fetch('/alerts/index.json').then((d) => d.json());
+              const dismissedModals = JSON.parse(window.localStorage.getItem('fcw:modals') || '[]');
+
+              const alertableItem = data.sort((a, b) => {
+                if (a.date > b.date) return 1;
+                if (b.date > a.date) return -1;
+                return 0;
+              }).find(({ display, liveThru }) => display.modal && new Date(liveThru) > new Date());
+
+              const logDismissed = ({ permalink }) => () => {
+                dismissedModals.push(permalink);
+                window.localStorage.setItem('fcw:modals', JSON.stringify(dismissedModals));
+              };
+
+              if (!alertableItem) return;
+
+              if (alertableItem && !dismissedModals.includes(alertableItem.permalink) && alertableItem.display.modal) {
+                setTimeout(() => {
+                  const el = document.getElementById('modal-template');
+                  const id = new Date().getTime().toString(16);
+
+                  const div = document.createElement('div');
+                  div.id = `modal-${id}`;
+                  div.innerHTML = window.templite(el.innerText, {
+                    ...alertableItem,
+                    appearance: alertableItem.type === 'alert' ? 'danger' : 'primary',
+                  });
+                  document.body.append(div);
+
+                  const closeBtn = document.querySelector(`#modal-${id} .modal-header button`);
+                  const actionBtn = document.querySelector(`#modal-${id} .action a`);
+
+                  actionBtn.addEventListener('click', logDismissed(alertableItem));
+                  closeBtn.addEventListener('click', (e) => {
+                    logDismissed(alertableItem)(e);
+                    document.getElementById(`modal-${id}`).remove();
+                  })
+                }, 500);
+              }
+
+              const redBar = document.querySelector('.red-bar');
+              if (alertableItem.display.redbar) {
+                const appearance = alertableItem.type === 'alert' ? 'danger' : 'primary';
+                redBar.className = `red-bar live red-bar--${appearance}`;
+                const a = redBar.querySelector('a');
+                a.innerText = alertableItem.action.label;
+                a.href = alertableItem.action.uri;
+                redBar.querySelector('.red-bar__content p').innerText = alertableItem.title;
+              }
+            }();
+        </script>
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
     </body>
