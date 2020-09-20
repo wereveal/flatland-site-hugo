@@ -26,4 +26,6 @@ Each week's discipline is accompanied by a discussion of the practice, preparati
   tag: Week 3
 - url: /resources/daily-prayer
   tag: Week 4
+- url: /resources/fasting
+  tag: Week 4
 {{< /resource-links >}}
