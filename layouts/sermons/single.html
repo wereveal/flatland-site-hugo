@@ -30,6 +30,11 @@
                     <span>{{ .Params.Speaker.Name }}</span>
                     <span> • </span>
                     <time>{{ .Date.Format "January 2, 2006" }}</time>
+                    <div class="content">
+                        {{ with .Content }}
+                            {{ . }}
+                        {{ end }}
+                    </div>
                 </p>
             </div>
             <div class="sermon-row__btns">
