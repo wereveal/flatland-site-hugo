@@ -17,7 +17,7 @@ connect:
     subtitle: Checkout different ways to get involved at Flatland
     cards:
     - url: /locations
-      title: Find a location and time that work for you.
+      title: Find a location and time that works for you.
       icon: fas fa-map-marker-alt
       img: https://i.imgur.com/jJ7jQns.jpg
       imgAlt: Front of Flatland 144 campus
