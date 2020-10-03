@@ -8,6 +8,17 @@
 </section>
 <section>
     <div class="container container--narrow container__content">
+        {{- if eq .Section "blog" -}}
+        <p class="byline">
+            {{- with .Params.Author.Name -}}
+            <small>By {{ . }}</small>
+            {{- end -}}
+            {{- if isset .Params.Author "name" -}}
+            <span></span>
+            {{- end -}}
+            <small>{{ .Date.Format "January 2, 2006" }}</small>
+        </p>
+        {{- end -}}
         {{ .Content | safeHTML }}
     </div>
 </section>

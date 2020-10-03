@@ -66,3 +66,22 @@
   margin-left: 12px;
   margin-bottom: 18px;
 }
+
+.byline {
+  display: grid;
+  grid-auto-flow: column;
+  width: max-content;
+  grid-gap: 8px;
+  align-content: center;
+
+  * {
+    line-height: 1;
+  }
+
+  span {
+    height: 100%;
+    display: block;
+    width: 1px;
+    background: var(--black);
+  }
+}
