@@ -39,7 +39,7 @@ export default async function handleSubmit(e) {
   }
 
   try {
-    await sendForm(target.dataset.id, body);
+    await sendForm(target.id, body);
   } catch (e) {}
 
   const btn = target.querySelector('button');
