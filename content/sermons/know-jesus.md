@@ -1,5 +1,5 @@
 ---
-title: "Interview with Brad Riddle"
+title: "Know Jesus"
 image: "https://i.imgur.com/ZDZdX6W.png"
 date: "2020-10-11T09:30:00.000Z"
 video:
