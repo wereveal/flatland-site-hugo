@@ -45,4 +45,37 @@ export default async function handleSubmit(e) {
   const btn = target.querySelector('button');
   btn.innerText = 'Saved!';
   btn.disabled = true;
+
+  setTimeout(() => {
+    const form = document.getElementById(target.id);
+    form.reset();
+    Array.prototype.slice.call(form.children).forEach((el) => {
+      el.style.display = 'none'
+    });
+
+    const div = document.createElement('div');
+    div.id = `success-${target.id}`;
+
+    const button = document.createElement('button');
+    button.className = 'btn btn--primary';
+    button.innerText = 'Reset form';
+
+    const title = document.createElement('p');
+    const strong = document.createElement('strong');
+    strong.innerText = `We've sent it off! You should be hearing from us soon!`;
+    title.append(strong);
+
+    div.append(title);
+    div.append(button);
+    form.append(div);
+
+    button.onclick = () => {
+      Array.prototype.slice.call(form.children).forEach((el) => {
+        el.style.display = '';
+      });
+      div.remove();
+      btn.disabled = false;
+      btn.innerText = 'Submit';
+    };
+  }, 300);
 }
