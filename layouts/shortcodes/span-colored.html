@@ -1,0 +1,14 @@
+{{ if .IsNamedParams }}
+  {{ $color := .Get "color" }}
+  {{ with .Get "background" }}
+    {{ $bg-color := .Get "background" }}
+  {{ end }}
+{{ else }}
+  {{ $color := .Get 0 }}
+  {{ with .Get 1 }}
+    {{ $bg-color := .Get 1 }}
+  {{ end }}
+{{ end }}
+<span style="color: {{ $color }};{{ with $bg-color }} background-color: {{ $bg-color }}{{ end }}">.Inner</span>
+{{ end }}
+
