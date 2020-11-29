@@ -9,6 +9,6 @@
     {{ $bg-color := .Get 1 }}
   {{ end }}
 {{ end }}
-<span style="color: {{ $color }};{{ with $bg-color }} background-color: {{ $bg-color }}{{ end }}">.Inner</span>
+<em style="font-style: normal; color: {{ $color }};{{ with $bg-color }} background-color: {{ $bg-color }}{{ end }}">.Inner</em>
 {{ end }}
 
