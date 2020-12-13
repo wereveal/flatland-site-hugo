@@ -12,6 +12,6 @@ action:
     url: https://flatland.churchcenter.com/registrations/events/631570
 ---
 
-Join us for a unique and intimate Christmas Eve service from your own living room. Together we'll hear the story of Jesus' birth and classic Christmas music. We'll cap it off with a traditional candle lighting. Because of local mandates, we will have limited space for our two services, so be sure to pre-register to reserve your spot.
+Join us for a our traditional Christmas Eve service this year. Together we'll hear the story of Jesus' birth and classic Christmas music. We'll cap it off with a traditional candle lighting. Because of local mandates, we will have limited space for our two services, so be sure to pre-register to reserve your spot.
 
 If you'd like to attend virtually, [we have that option too.](/events/christmas-eve-2020-online)
