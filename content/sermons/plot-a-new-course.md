@@ -1,6 +1,6 @@
 ---
 title: "Plot a New Course"
-image: "https://imgur.com/a/GopdZBj"
+image: "https://i.imgur.com/4gLJe3g.png"
 date: "2020-12-20T09:30:00.000Z"
 video:
   type: "vimeo"
