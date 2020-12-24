@@ -13,11 +13,13 @@ image: https://i.imgur.com/VXjsnkb.jpg
 - label: Zach Jones
   image: https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/leadership%2Fzach-jones.png?alt=media&token=6c7cfcab-acd6-459d-b7a7-0cbf3a48407c
 - label: Kevin Nygren
-  image: https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Screen%20Shot%202019-10-24%20at%204.49.52%20PM.png?alt=media&token=4997d7c7-cc0d-4f15-8f1d-d04d2bc9e984
+  image: https://i.imgur.com/4alrkPx.png
 - label: Codey Friesen
   image: https://i.imgur.com/6rY2BGR.png
 - label: Mitchell McNaney
   image: https://i.imgur.com/kzFD7Ly.png
+- label: JJ Jackson
+  image: https://i.imgur.com/jUbKppR.jpg
 {{< /gallery >}}
 
 ## Bart Wilkins
@@ -57,4 +59,8 @@ _Youth Pastor_
 ## Mitchell McNaney
 
 _Head of Omaha School of Ministry_
+
+## JJ Jackson
+
+_17 (Prison Ministry) Campus Pastor_
 
