@@ -21,7 +21,7 @@ Pray for a deeper faith in Jesus and closer walk with His Holy Spirit.
 
 ## Thursday
 
-Pray for the missionaries and organizations we support through Flatland. For more information, go to flatlandchurch.com/the-move.
+Pray for the missionaries and organizations we support through Flatland. [Find out more about the Move.](/the-move)
 
 ## Friday
 
