@@ -2,7 +2,8 @@
   "dependencies": {
     "atomic-algolia": "^0.3.17",
     "catchify": "^2.6.1",
-    "got": "^11.5.2"
+    "got": "^11.5.2",
+    "mailchimp-node": "^1.1.7"
   },
   "scripts": {
     "algolia": "atomic-algolia",
