@@ -20,6 +20,8 @@ image: https://i.imgur.com/VXjsnkb.jpg
   image: https://i.imgur.com/kzFD7Ly.png
 - label: JJ Jackson
   image: https://i.imgur.com/jUbKppR.jpg
+- label: Shannon Smay
+  image: https://i.imgur.com/SnDTwZ2.jpg
 {{< /gallery >}}
 
 ## Bart Wilkins
@@ -63,4 +65,8 @@ _Head of Omaha School of Ministry_
 ## JJ Jackson
 
 _17 (Prison Ministry) Campus Pastor_
+
+## Shannon Smay
+
+_Communications Director_
 
