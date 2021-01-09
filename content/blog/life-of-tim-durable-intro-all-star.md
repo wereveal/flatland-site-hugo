@@ -1,13 +1,13 @@
 ---
-title: “The Life of Tim: Durable, Introduction - All Star Cast”
+title: "The Life of Tim: Durable, Introduction - All Star Cast"
 image: "https://images.unsplash.com/photo-1473218786326-03234fe85b96?crop=entropy&cs=srgb&fm=jpg&ixid=MXw5NjYxfDB8MXxzZWFyY2h8NXx8QmlibGV8ZW58MHx8fA&ixlib=rb-1.2.1&q=85"
-date: "2021-01-04T15:03:11.372Z"
+date: "2021-01-08T20:04:39.000Z"
 author:
-   id: “jj-jackson”
-   name: “JJ Jackson”
-   role: “Research Team”
+  id: "jj-jackson"
+  name: "JJ Jackson"
+  role: "Research Team"
 topics:
-   -"devotionals”
+  - "devotionals"
 ---
 [**2 Timothy 1:1-18**][1]
 

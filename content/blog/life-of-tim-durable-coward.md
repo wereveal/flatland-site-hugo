@@ -9,6 +9,8 @@ author:
 topics:
   - "devotionals"
 ---
+[**2 Timothy 1:1-18**][2tim1]
+
 When I was a kid I was awkward, clumsy, and literally tripped over my own feet because I was so pigeon toed my feet pointed towards each other. That led to a lot of bullying, not just verbal, I was beat up by my neighbors who were older. I stopped ridding the bus walking a few miles to school to avoid them. That just made me an easier target since they could ambush and beat me up with no one seeing. One day I was a mess and my mother noticed. She shocked me. She told me I needed to defend myself. I had to stand up for myself. I was surprised that it worked... well sort of, I needed [Paul's advise to Timothy][2tim1].
 
 Paul tells Timothy that God didn't give us a spirit of fear/timidness/cowardliness. He provided us through His Spirit power, love and self-discipline. Those three go hand in hand. Power has to be tempered by love. Power is often abused because those in power take advantage of those in need. Self-discipline is mandatory for love to temper the power. It keeps us on the right track, it guards us from abusing the power.
