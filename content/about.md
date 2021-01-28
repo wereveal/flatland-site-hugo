@@ -1,7 +1,7 @@
 ---
 title: About
 description: Find out more about Flatland Church.
-image: https://i.imgur.com/sAX1eOJ.jpg
+image: https://i.imgur.com/AxYVqB6.jpg
 imagePosition: top
 ---
 
