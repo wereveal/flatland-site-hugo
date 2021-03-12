@@ -1,5 +1,5 @@
 ---
-title: "Empty: Enter - Distracted" Plsam 73
+title: "Empty: Enter - Distracted Plsam 73"
 image: https://images.unsplash.com/photo-1524679166686-04237b4667b4?crop=entropy&cs=srgb&fm=jpg&ixid=MXw5NjYxfDB8MXxzZWFyY2h8M3x8c3Rvcm18ZW58MHx8fA&ixlib=rb-1.2.1&q=85
 date:
 author:
