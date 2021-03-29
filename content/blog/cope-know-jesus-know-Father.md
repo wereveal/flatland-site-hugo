@@ -1,13 +1,13 @@
 ---
-title: “Cope: Know Jesus and Know the Father”
-image: “https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjk2NjF9“
-date: “2020-10-14T06:41:11.945Z”
+title: "Cope: Know Jesus and Know the Father"
+image: "https://images.unsplash.com/photo-1475137979732-b349acb6b7e3?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjk2NjF9"
+date: "2020-10-14T06:41:11.945Z"
 author:
-  id: “bill-reveal”
-  name: “Bill Reveal”
-  role: “Research Team”
+    id: "bill-reveal"
+    name: "Bill Reveal"
+    role: "Research Team"
 topics:
-  - “devotionals”
+  - "devotionals"
 ---
 [**John 14:1-14**][1]
 

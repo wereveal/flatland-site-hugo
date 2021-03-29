@@ -1,13 +1,13 @@
 ---
-title: “Cope: Know Jesus - Troubled Hearts”
-image: “https://images.unsplash.com/photo-1504422128536-1f6d57b488eb?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjk2NjF9“
-date: “2020-10-12T15:34:36.528Z”
+title: "Cope: Know Jesus - Troubled Hearts"
+image: "https://images.unsplash.com/photo-1504422128536-1f6d57b488eb?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjk2NjF9"
+date: "2020-10-12T15:34:36.528Z"
 author:
-  id: “bill-reveal”
-  name: “Bill Reveal”
-  role: “Research Team”
+  id: "bill-reveal"
+  name: "Bill Reveal"
+  role: "Research Team"
 topics:
-  - “devotionals”
+  - "devotionals"
 ---
 [John 14:1-14][1]
 I was intrigued as I watched a series about Egyptian burial rituals. Everything they did regarding mummification was to ensure the dead could travel safely to the afterlife. They had to be buried just right, have the right utensils, the correct words written all around them, anything and everything placed around the coffin to help them on their journey to the afterlife. The rich could easily attain this and feel safe in their hope for eternity. But the poor had very little hope. How could they? They didn't have the right stuff. **We are not like that** for our hope is in Christ and Christ alone.

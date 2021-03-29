@@ -85,3 +85,17 @@
     background: var(--black);
   }
 }
+
+.blog-title-row {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-subscribe-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  grid-gap: 8px;
+  align-items: end;
+}

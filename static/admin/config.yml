@@ -1,0 +1,56 @@
+backend:
+  name: github
+  branch: master
+  repo: flatlandchurch/flatland-site-hugo
+  use_graphql: true
+media_folder: static/img
+public_folder: /img
+publish_mode: editorial_workflow
+site_url: https://flatlandchurch.com
+display_url: flatlandchurch.com
+slug:
+  encoding: "ascii"
+  clean_accents: true
+collections:
+  - name: "sermons"
+    label: "Sermons"
+    sortable_fields: ["title", "series", "speaker"]
+    label_singular: "Sermon"
+    folder: "content/sermons"
+    preview_path: "/sermons/{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Speaker"
+        name: "speaker"
+        widget: "string"
+      - label: "Series"
+        name: "series"
+        widget: "relation"
+        collection: "series"
+        value_field: "{{slug}}"
+        search_fields: ["title"]
+        display_fields: ["title"]
+  - name: "series"
+    label: "Series"
+    folder: "content/series"
+    preview_path: "/series/{{slug}}"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "string"}
+      - {label: "Date Started", name: "date", widget: "string"}
+  - name: "people"
+    label: "People"
+    label_singular: "Person"
+    folder: "content/people"
+    slug: "{{slug}}"
+    create: true
+    identifier_field: "name"
+    publish_mode: false
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Role", name: "role", widget: "string"}

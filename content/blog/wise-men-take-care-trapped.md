@@ -8,7 +8,8 @@ author:
   role: "Research Team"
 topics:
   - "devotionals"
-  ---
+---
+
 [**Matthew 2:8-9**][1]
 
 Herod appealed to the hearts of the wise men.  After all, they had come to worship the new king, so why wouldn’t they want to help others to get to worship Jesus as well?  As we read on in Matthew, we’ll discover the true heart of Herod, and this “appeal” is just bait for his trap. But for now, let’s just agree that traps only work because they’re attractive.
