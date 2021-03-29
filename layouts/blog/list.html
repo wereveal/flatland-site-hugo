@@ -7,7 +7,18 @@
 
 <section>
     <div class="container container__content">
-        <h1>{{ .Title }}</h1>
+        <div class="blog-title-row">
+            <h1>{{ .Title }}</h1>
+            <form id="blog-subscribe" style="margin-top: 0">
+                <div class="form-subscribe-form-row">
+                    <div class="form-control">
+                        <label for="subscribe-email">Email Address</label>
+                        <input type="email" id="subscribe-email" required />
+                    </div>
+                    <button class="btn btn--gray" type="submit" id="subscribe-button">Subscribe</button>
+                </div>
+            </form>
+        </div>
         <div class="blog__container">
             {{ $latest := index $paginator.ByDate.Reverse 0 }}
             {{ if not .Paginator.HasPrev }}
@@ -49,4 +60,36 @@
         </div>
     </div>
 </section>
+<script>
+    !async function() {
+      document.getElementById('blog-subscribe').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const emailEl = document.getElementById('subscribe-email');
+        emailEl.disabled = true;
+        const email = emailEl.value;
+
+        const btn = document.getElementById('subscribe-button');
+        btn.disabled = true;
+        btn.innerText = 'Submitting...';
+
+        await fetch('/.netlify/functions/subscribe', {
+          method: 'POST',
+          body: JSON.stringify({ email }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+
+        document.querySelector('.form-subscribe-form-row').remove();
+        btn.remove();
+
+        const title = document.createElement('p');
+        const italic = document.createElement('em');
+        italic.innerText = 'Subscribed!';
+        title.append(italic);
+        title.style.marginTop = 0;
+        e.target.append(title);
+      });
+    }();
+</script>
 {{ end }}

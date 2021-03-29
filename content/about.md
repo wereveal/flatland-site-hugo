@@ -1,7 +1,8 @@
 ---
 title: About
 description: Find out more about Flatland Church.
-image: https://c2.staticflickr.com/2/1635/25570255933_48440accc1_b.jpg
+image: https://i.imgur.com/6jKhyU9.jpg
+imagePosition: center
 ---
 
 Flatland is all about moving people to the center of God’s kingdom. Through creative presentations and messages you will discover what God’s kingdom is all about and how being a part of it will transform your life in a powerful way.

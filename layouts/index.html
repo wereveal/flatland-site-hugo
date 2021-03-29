@@ -11,7 +11,10 @@ Flatland Church | Helping people move to the center of God's Kingdom
     <section class="jumbotron">
         <div class="jumbotron__content">
             <h1>{{.Params.Title | safeHTML}}</h1>
-            <p>{{.Params.Subtitle}}</p>
+            <div class="jumbotron__content--text">
+                <p>{{.Params.Subtitle}}</p>
+                <p><small>Sunday Mornings, 9:30 AM &amp; 11:00 AM</small></p>
+            </div>
             <div class="jumbotron__buttons">
                 <a class="btn btn--primary" href="{{ .Params.Action.Url }}">{{ .Params.Action.Label }}</a>
                 {{ with .Params.SecondaryAction }}
@@ -19,7 +22,7 @@ Flatland Church | Helping people move to the center of God's Kingdom
                 {{ end }}
             </div>
         </div>
-        <video src="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/Flatland%20Web%20Video.mp4?alt=media&token=27c1cb44-db1c-4150-8cd7-be5ea4da2d75" autoplay loop muted></video>
+        <video src="https://firebasestorage.googleapis.com/v0/b/flatland-api.appspot.com/o/2021%20Website%20Loop.mp4?alt=media&token=f66630a2-303d-43e2-acce-98bd95788ae2" autoplay loop muted></video>
         <img class="mobile-alt" src="{{ .Params.Image }}" alt="Jason Berry being baptized">
         <div class="jumbotron__overlay"></div>
     </section>
@@ -38,7 +41,7 @@ Flatland Church | Helping people move to the center of God's Kingdom
     {{ end }}
 
     {{/* Today Page Section */}}
-    <section class="block block--alt">
+    <section class="block block--alt" style="overflow-x: hidden">
         <div class="container container--two-col">
             <div class="section-title">
                 <h2>{{ .Params.Today.Title }}</h2>
